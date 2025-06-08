@@ -1,0 +1,11 @@
+@use '_variables.scss' as v;
+
+%hover {
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: #9dff18;
+        text-shadow: 0 0  15px #ffd700;
+        cursor: pointer;
+        transform: scale(1.3);
+    }
+}
