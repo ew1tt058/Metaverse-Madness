@@ -1,12 +1,16 @@
 {
   "name": "metaverse-madness",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ew1tt058/Metaverse-Madness.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tykhon Illia",
   "license": "ISC",
   "description": "",
   "dependencies": {
