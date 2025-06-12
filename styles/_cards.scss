@@ -1,0 +1,333 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "placeholders";
+
+.cards {
+    width: 100%;
+    height: 800px
+
+    &-title {
+        @include m.d-flex(center, center, nowrap, row, 0, 0);
+        &__text {
+            width: 900px;
+            text-align: center;
+            @include m.font(64px, 700, v.$color__white);
+            
+        }
+    }
+
+    &-wrapper {
+        @include m.d-flex(center, center, nowrap, row, 10px, 0);
+        padding:  50px 0 0 0;
+        @media (max-width:v.$media_lg){
+        padding: 50px 20px 0 20px ;
+        }
+        &__hogwards {
+            width: 100%;
+            height: 560px;
+            display: block;
+            overflow: hidden;
+            max-width: 170px;
+            grid-area:hogwards;
+            position: relative;
+            border-radius: 24px;
+            background: url("../assets/hogwards.webp") center/cover no-repeat;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                width: 100%;
+                max-width: 370px;
+                @include m.d-flex(end, start, nowrap, column, 0, 30px);
+
+                @media(max-width:v.$media_lg){
+                max-width: 210px;
+                }
+            .description{
+                display: block;
+                padding: 0 0 96px 32px;
+            }
+            .title{              
+                top:89%;
+                left:9%;
+                transform: rotate(0);
+                transform-origin: unset ;
+
+                @media(max-width:v.$media_lg){
+                @include m.font(24px, 600, v.$color__white);
+                }
+            }
+            .metaverse{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 0 32px;
+                &-icon{
+                
+                }
+            }
+            }
+
+            &-description {
+                display: none;
+                @include m.font(16px, 400, v.$color__white);
+            }
+
+            &-title {
+                transform-origin: bottom ;
+                top: 67%;
+                left:-8%;
+                width: 240px;
+                position: absolute;
+                transform: rotate(-90deg);
+                @include m.font(32px, 600, v.$color__white);
+            }
+        }
+
+        &__upside{
+            width: 100%;
+            height: 560px;
+            display: block;
+            overflow: hidden;
+            max-width: 170px;
+            grid-area:upside;
+            position: relative;
+            border-radius: 24px;
+            background: url("../assets/upside.webp") center/cover no-repeat;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                width: 100%;
+                max-width: 370px;
+                @include m.d-flex(end, start, nowrap, column, 0, 30px);
+                @media(max-width:v.$media_lg){
+                max-width: 210px;
+                }
+            .description{
+                display: block;
+                padding: 0 0 96px 32px;
+            }
+            .title{              
+                top:89%;
+                left:9%;
+                transform: rotate(0);
+                transform-origin: unset ;
+
+                @media(max-width:v.$media_lg){
+                @include m.font(20px, 600, v.$color__white);
+                }
+            }
+            .metaverse{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 0 32px;
+                &-icon{
+                
+                }
+            }
+            }
+            &-description {
+                display: none;
+                @include m.font(16px, 400, v.$color__white);
+            }
+            &-title {
+                top: 57%;
+                left:-40%;
+                width: 350px;
+                position: absolute;
+                transform-origin: bottom ;
+                transform: rotate(-90deg);
+                @include m.font(32px, 600, v.$color__white);
+            }
+        }
+
+        &__kadirojo {
+            width: 100%;
+            height: 560px;
+            display: block;
+            overflow: hidden;
+            max-width: 170px;
+            grid-area:kadirojo;
+            position: relative;
+            border-radius: 24px;
+            background: url("../assets/kadirojo.webp") center/cover no-repeat;
+            transition: all 0.3s ease-in-out;
+            &:hover{    
+                width: 100%;
+                max-width: 370px;
+                @include m.d-flex(end, start, nowrap, column, 0, 30px);
+                @media(max-width:v.$media_lg){
+                max-width: 210px;
+                }
+            .description{
+                display: block;
+                padding: 0 0 96px 32px;
+            }
+            .title{              
+                top:89%;
+                left:9%;
+                transform: rotate(0);
+                transform-origin: unset ;
+                @include m.font(32px, 600,v.$color__white);
+                @media(max-width:v.$media_lg){
+                @include m.font(22px, 600, v.$color__white);
+                }
+            }
+            .metaverse{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 0 32px;
+                &-icon{
+                
+                }
+            }
+            }
+
+            &-description {
+                display: none;
+                @include m.font(16px, 400, v.$color__white);
+            }
+
+            &-title {
+                transform-origin: bottom ;
+                top: 64%;
+                left:-18%;
+                width: 265px;
+                position: absolute;
+                transform: rotate(-90deg);
+                @include m.font(32px, 600, v.$color__white);
+            }
+        }
+
+        &__island {
+            width: 100%;
+            height: 560px;
+            display: block;
+            grid-area:island;
+            overflow: hidden;
+            max-width: 170px;
+            position: relative;
+            border-radius: 24px;
+            background: url("../assets/island.webp") center/cover no-repeat;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                width: 100%;
+                max-width: 370px;
+                @include m.d-flex(end, start, nowrap, column, 0, 30px);
+                @media(max-width:v.$media_lg){
+                max-width: 210px;
+                }
+            .description{
+                display: block;
+                padding: 0 0 96px 32px;
+            }
+            .title{              
+                top:89%;
+                left:9%;
+                transform: rotate(0);
+                transform-origin: unset ;
+                @media(max-width:v.$media_lg){
+                @include m.font(24px, 600, v.$color__white);
+                }
+            }
+            .metaverse{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 0 32px;
+                &-icon{
+                
+                }
+            }
+            }
+
+            &-description {
+                display: none;
+                @include m.font(16px, 400, v.$color__white);
+            }
+
+            &-title {
+                transform-origin: bottom ;
+                top: 67%;
+                left:-8%;
+                width: 250px;
+                position: absolute;
+                transform: rotate(-90deg);
+                @include m.font(32px, 600, v.$color__white);
+            }
+        }
+
+        &__hawkins {
+            width: 100%;
+            height: 560px;
+            display: block;
+            grid-area:hawkins;
+            overflow: hidden;
+            max-width: 170px;
+            position: relative;
+            border-radius: 24px;
+            background: url("../assets/hawkins.webp") center/cover no-repeat;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                width: 100%;
+                max-width: 370px;
+                @include m.d-flex(end, start, nowrap, column, 0, 30px);
+                @media(max-width:v.$media_lg){
+                max-width: 210px;
+                }
+            .description{
+                display: block;
+                padding: 0 0 96px 32px;
+            }
+            .title{              
+                top:89%;
+                left:9%;
+                transform: rotate(0);
+                transform-origin: unset ;
+                @media(max-width:v.$media_lg){
+                @include m.font(24px, 600, v.$color__white);
+                }
+            }
+            .metaverse{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 0 32px;
+                &-icon{
+                
+                }
+            }
+            }
+
+            &-description {
+                display: none;
+                @include m.font(16px, 400, v.$color__white);
+            }
+
+            &-title {
+                transform-origin: bottom ;
+                top: 67%;
+                left:-8%;
+                width: 240px;
+                position: absolute;
+                transform: rotate(-90deg);
+                @include m.font(32px, 600, v.$color__white);
+            }
+        }
+    }
+}
+
+.metaverse {
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    
+
+    &-icon {
+        align-items: center;
+        width: 24px;
+        height: 24px;
+    }
+}
