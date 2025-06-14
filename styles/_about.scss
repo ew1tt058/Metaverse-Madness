@@ -7,15 +7,16 @@
     z-index: 11;
     width: 100%;
     max-width: 100vw;
-    height: 400px;
-    // padding: 100px 0 0 0 ;
-    @include m.d-flex(center,center,nowrap,row,0,0);
+    height: 100%;
+    padding: 320px 0 0 0 ;
+    @include m.d-flex(center,center,nowrap,column,0,0);
 
     &-text{
-        text-align: center;
         width: 1000px;
-        line-height: 2;
-        @include m.font(24px,300,v.$color__white);
+        padding: 20px;
+        line-height: 2.2;
+        text-align: center;
+        @include m.font(26px,400,v.$color__greywhite);
 
         &__bold{
         @include m.font(24px,700,v.$color__white);
