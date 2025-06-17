@@ -842,6 +842,265 @@ html {
   scroll-behavior: smooth;
 }
 
+.map {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 30px;
+}
+.map-title {
+  width: 960px;
+  line-height: 70px;
+  text-align: center;
+  padding: 0 0 68px 0;
+  font-size: 51px;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+}
+.map-background {
+  position: relative;
+  width: 1400px;
+  height: 630px;
+  background: url("../assets/map.webp") center/cover no-repeat;
+}
+.map-background__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 0;
+  row-gap: 0;
+}
+.map-background__women-icon {
+  top: 6%;
+  left: 8%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+.map-background__women-icon-img {
+  top: 7.7%;
+  left: 9.9%;
+  width: 61px;
+  z-index: 999;
+  height: 61px;
+  position: absolute;
+  border-radius: 36px;
+  box-shadow: 0px 0px 40px rgb(238, 131, 211);
+  background: url("../assets/women.webp") center no-repeat;
+}
+.map-background__boy-icon {
+  top: 40%;
+  left: 48%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+.map-background__boy-icon-img {
+  border-radius: 36px;
+  top: 41.7%;
+  left: 49.9%;
+  width: 61px;
+  z-index: 999;
+  height: 61px;
+  position: absolute;
+  box-shadow: 0px 0px 40px rgb(238, 131, 211);
+  background: url("../assets/boy.webp") center no-repeat;
+}
+.map-background__man-icon {
+  top: 64%;
+  left: 82%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+.map-background__man-icon-img {
+  border-radius: 36px;
+  top: 65.7%;
+  left: 83.9%;
+  width: 61px;
+  z-index: 999;
+  height: 61px;
+  position: absolute;
+  box-shadow: 0px 0px 40px rgb(238, 131, 211);
+  background: url("../assets/man.webp ") center no-repeat;
+}
+
+.card--upside {
+  top: 32%;
+  left: 18%;
+  width: 280px;
+  height: 196px;
+  position: relative;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 0;
+}
+.card--upside__background {
+  display: flex;
+  justify-content: start;
+  align-items: statt;
+  flex-wrap: wrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 0;
+  width: 260px;
+  height: 176px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 40px rgb(238, 131, 211);
+  background: url("../assets/upside.webp") center/cover no-repeat;
+}
+.card--upside__icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  max-height: 44px;
+  max-width: 250px;
+  position: absolute;
+  flex-direction: row;
+  padding: 74px 0 0 10px;
+}
+.card--upside__icon-girl {
+  z-index: 3;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: url("../assets/girl.webp");
+}
+.card--upside__icon-france {
+  left: -9%;
+  z-index: 2;
+  position: relative;
+  background: url("../assets/france.webp");
+  width: 44px;
+  height: 44px;
+}
+.card--upside__icon-glass {
+  left: -18%;
+  z-index: 1;
+  position: relative;
+  background: url("../assets/glass.webp");
+  width: 44px;
+  height: 44px;
+}
+.card--upside__description {
+  padding: 16px 0 0 0;
+  width: 100px;
+  height: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.card--upside__title {
+  padding: 135px 0 0 0;
+  align-self: center;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+}
+
+.card--hawkins {
+  top: -23%;
+  left: 60%;
+  width: 280px;
+  height: 196px;
+  position: relative;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 0;
+}
+.card--hawkins__background {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 0;
+  width: 260px;
+  height: 176px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 40px rgb(183, 75, 197);
+  background: url("../assets/hawkins.webp") center/cover no-repeat;
+}
+.card--hawkins__icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  max-height: 44px;
+  max-width: 250px;
+  position: absolute;
+  flex-direction: row;
+  padding: 74px 0 0 10px;
+}
+.card--hawkins__icon-girl {
+  z-index: 3;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: url("../assets/girl.webp");
+}
+.card--hawkins__icon-france {
+  left: -9%;
+  z-index: 2;
+  position: relative;
+  background: url("../assets/france.webp");
+  width: 44px;
+  height: 44px;
+}
+.card--hawkins__icon-glass {
+  left: -18%;
+  z-index: 1;
+  position: relative;
+  background: url("../assets/glass.webp");
+  width: 44px;
+  height: 44px;
+}
+.card--hawkins__description {
+  padding: 16px 0 0 0;
+  width: 100px;
+  height: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.card--hawkins__title {
+  padding: 135px 0 0 0;
+  align-self: center;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+}
+
 .header-wrapper {
   width: 100%;
   height: 100px;
