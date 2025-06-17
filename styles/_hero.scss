@@ -24,7 +24,6 @@
                 white-space: wrap;
                 text-align: center;
                 letter-spacing: 5px;
-                // @extend %hover-title;
                 @include m.font(120px, 800);
 
                 @media (max-width: v.$media_lg) {
