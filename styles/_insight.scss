@@ -1,0 +1,122 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "placeholders";
+
+.insight {
+    width: 100%;
+    height: 100%;
+    @include m.d-flex(center, center, nowrap, column, 0, 0);
+
+    &-blocks {
+        @include m.d-flex(center, center, nowrap, column, 0, 30px);
+        width: 100%;
+
+        &__title {
+            padding-top: 5px;
+            @include m.font(64px, 600, v.$color__white);
+        }
+
+        &__launch {
+            padding: 30px 0 0 0;
+            @include m.d-flex(center, center, nowrap, row, 68px, 0);
+
+            .launch-img {
+                background: url("../assets/launch.webp") center/cover no-repeat;
+                width: 270px;
+                height: 250px;
+                border-radius: 24px;
+                position: left;
+            }
+            .launch-description {
+                width: 690px;
+                height: 100%;
+
+                &__title {
+                    @include m.font(44px, 400, v.$color__white);
+                }
+                &__text {
+                    @include m.font(20px, 300, rgba(#ffff, 0.5));
+                }
+            }
+            .launch-button {
+                width: 100px;
+                height: 100px;
+                padding: 0 0 0 32px;
+                &__svg {
+                    width: 100px;
+                    height: 100px;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        &__master {
+            @include m.d-flex(center, center, nowrap, row, 68px, 0);
+            .master-img {
+                background: url("../assets/master.webp") center/cover no-repeat;
+                width: 270px;
+                height: 250px;
+                border-radius: 24px;
+                position: left;
+            }
+            .master-description {
+                width: 690px;
+                height: 100%;
+
+                &__title {
+                    @include m.font(44px, 400, v.$color__white);
+                }
+                &__text {
+                    @include m.font(20px, 300, rgba(#ffff, 0.5));
+                }
+            }
+            .master-button {
+                width: 100px;
+                height: 100px;
+                padding: 0 0 0 32px;
+                &__svg {
+                    width: 100px;
+                    height: 100px;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &__platform {
+            @include m.d-flex(center, center, nowrap, row, 68px, 0);
+            .platform-img {
+                background: url("../assets/platform.webp") center/cover no-repeat;
+                width: 270px;
+                height: 250px;
+                border-radius: 24px;
+                position: left;
+            }
+            .platform-description {
+                width: 690px;
+                height: 100%;
+
+                &__title {
+                    @include m.font(44px, 400, v.$color__white);
+                }
+                &__text {
+                    @include m.font(20px, 300, rgba(#ffff, 0.5));
+                }
+            }
+            .platform-button {
+                width: 100px;
+                height: 100px;
+                padding: 0 0 0 32px;
+                &__svg {
+                    width: 100px;
+                    height: 100px;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
