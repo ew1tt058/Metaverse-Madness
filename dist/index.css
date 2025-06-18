@@ -1137,6 +1137,121 @@ html {
 .insight-blocks__platform .platform-button:hover {
   cursor: pointer;
 }
+.insight-footer {
+  width: 100%;
+  position: relative;
+  padding-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 32px;
+  row-gap: 0;
+}
+.insight-footer__samantha {
+  z-index: -1;
+  width: 370px;
+  height: 610px;
+  padding: 30px;
+  position: relative;
+  border-radius: 24px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.insight-footer__samantha-title {
+  font-size: 32px;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+}
+.insight-footer__samantha-signature {
+  padding: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 200;
+  font-style: normal;
+  color: white;
+}
+.insight-footer__samantha-description {
+  line-height: 2;
+  font-size: 24px;
+  font-weight: 2300;
+  font-style: normal;
+  color: white;
+}
+.insight-footer__explore {
+  top: 23%;
+  left: 36%;
+  opacity: 0.9;
+  z-index: 999;
+  width: 160px;
+  height: 360px;
+  position: absolute;
+  transform: rotate(-30deg);
+  background: url("../assets/explore.webp") center/cover no-repeat;
+}
+.insight-footer__image {
+  z-index: -1;
+  width: 768px;
+  height: 610px;
+  position: relative;
+  border-radius: 24px;
+  background: url("../assets/rocket.webp") center/cover no-repeat;
+}
+.insight-bottom {
+  width: 1200px;
+  border-bottom: 3px solid rgba(199, 199, 199, 0.2);
+  padding: 250px 0 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 326px;
+  row-gap: 0;
+}
+.insight-bottom__title {
+  font-size: 38px;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+}
+.insight-bottom__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 12px;
+  row-gap: 0;
+  border: none;
+  height: 64px;
+  width: 246px;
+  border-radius: 34px;
+  background-color: #25618B;
+  transition: 0.3s ease-in-out;
+}
+.insight-bottom__button-svg {
+  width: 24px;
+  height: 18px;
+}
+.insight-bottom__button-text {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+}
+.insight-bottom__button:hover {
+  cursor: pointer;
+  background-color: #4B0082;
+}
 
 .card--upside {
   top: 32%;
