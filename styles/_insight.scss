@@ -35,6 +35,8 @@
                     @include m.font(44px, 400, v.$color__white);
                 }
                 &__text {
+                    padding: 16px 0 0 0;
+                    line-height: 2;
                     @include m.font(20px, 300, rgba(#ffff, 0.5));
                 }
             }
@@ -68,6 +70,8 @@
                     @include m.font(44px, 400, v.$color__white);
                 }
                 &__text {
+                    padding: 16px 0 0 0;
+                    line-height: 2;
                     @include m.font(20px, 300, rgba(#ffff, 0.5));
                 }
             }
@@ -102,6 +106,8 @@
                     @include m.font(44px, 400, v.$color__white);
                 }
                 &__text {
+                    padding: 16px 0 0 0;
+                    line-height: 2;
                     @include m.font(20px, 300, rgba(#ffff, 0.5));
                 }
             }
@@ -191,7 +197,7 @@
             &-text{
             @include m.font(14px, 300, v.$color__white);
             }
-            transition: 0.3s ease-in-out ;
+            transition: all 0.3s ease-in-out;
             &:hover{
                 cursor: pointer;
                 background-color: v.$color__purple ;
