@@ -1,7 +1,7 @@
-.header-wrapper__title {
+.footer-wrap__title, .header-wrapper__title {
   transition: all 0.3s ease-in-out;
 }
-.header-wrapper__title:hover {
+.footer-wrap__title:hover, .header-wrapper__title:hover {
   color: #9dff18;
   text-shadow: 0 0 15px #ffd700;
   cursor: pointer;
@@ -1032,6 +1032,8 @@ html {
   color: white;
 }
 .insight-blocks__launch .launch-description__text {
+  padding: 16px 0 0 0;
+  line-height: 2;
   font-size: 20px;
   font-weight: 300;
   font-style: normal;
@@ -1076,6 +1078,8 @@ html {
   color: white;
 }
 .insight-blocks__master .master-description__text {
+  padding: 16px 0 0 0;
+  line-height: 2;
   font-size: 20px;
   font-weight: 300;
   font-style: normal;
@@ -1120,6 +1124,8 @@ html {
   color: white;
 }
 .insight-blocks__platform .platform-description__text {
+  padding: 16px 0 0 0;
+  line-height: 2;
   font-size: 20px;
   font-weight: 300;
   font-style: normal;
@@ -1236,7 +1242,7 @@ html {
   width: 246px;
   border-radius: 34px;
   background-color: #25618B;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .insight-bottom__button-svg {
   width: 24px;
@@ -1251,6 +1257,96 @@ html {
 .insight-bottom__button:hover {
   cursor: pointer;
   background-color: #4B0082;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 0;
+  row-gap: 0;
+}
+.footer-wrap {
+  padding: 50px 0 50px 0;
+  height: 100%;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 0;
+  row-gap: 0;
+}
+.footer-wrap__title {
+  font-size: 24px;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  width: 160px;
+}
+.footer-wrap__description {
+  margin: 0 220px 0 220px;
+  width: 380px;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-wrap__svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 30px;
+  row-gap: 0;
+}
+.footer-wrap__svg-twitter {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+}
+.footer-wrap__svg-twitter:hover {
+  fill: #ffbe00;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.footer-wrap__svg-linkedin {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+}
+.footer-wrap__svg-linkedin:hover {
+  fill: #ffbe00;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.footer-wrap__svg-instagram {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+}
+.footer-wrap__svg-instagram:hover {
+  fill: #ffbe00;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.footer-wrap__svg-facebook {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+}
+.footer-wrap__svg-facebook:hover {
+  fill: #ffbe00;
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 .card--upside {
