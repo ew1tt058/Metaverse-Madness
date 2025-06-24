@@ -155,7 +155,7 @@
         }
         &__explore{
             top: 23%;
-            left: 36%;
+            left: 32%;
             opacity: 0.9;
             z-index: 999;
             width: 160px;
@@ -163,6 +163,7 @@
             position: absolute;
             transform: rotate(-30deg);
             background: url("../assets/explore.webp")center/cover no-repeat;
+
         }
         &__image{
             z-index: -1;
@@ -179,15 +180,19 @@
         padding: 250px 0 80px 0;
         @include m.d-flex(center, end, nowrap, row, 326px, 0);
         &__title{
-            @include m.font(38px, 600, v.$color__white);
+            padding: 0 0 10px 0;
+        &-text{
+            @include m.font(38px, 800, v.$color__white);
         }
+    }
         &__button{
-            @include m.d-flex(center, center, nowrap, row, 12px, 0);
             border: none;
             height: 64px;
             width: 246px;
             border-radius: 34px;
+            transition: all 0.3s ease-in-out;
             background-color: v.$color__ocean;
+            @include m.d-flex(center, center, nowrap, row, 12px, 0);
 
             &-svg{
                 width: 24px;
@@ -197,7 +202,6 @@
             &-text{
             @include m.font(14px, 300, v.$color__white);
             }
-            transition: all 0.3s ease-in-out;
             &:hover{
                 cursor: pointer;
                 background-color: v.$color__purple ;
