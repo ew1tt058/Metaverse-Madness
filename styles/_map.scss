@@ -15,6 +15,9 @@
         text-align: center;
         padding: 0 0 68px 0;
         @include m.font(51px, 600, v.$color__white);
+        &__text{
+            @include m.font(64px,700,v.$color__white);
+        }
     }
 
     &-background {

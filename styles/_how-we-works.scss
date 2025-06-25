@@ -54,6 +54,7 @@
             }
 
             &-description {
+                @include m.font(18px,400,v.$color__greywhite);
                 width: 270px;
             }
         }
@@ -74,6 +75,7 @@
             }
 
             &-description {
+                @include m.font(18px,400,v.$color__greywhite);
                 width: 330px;
             }
         }
@@ -95,6 +97,7 @@
 
             &-description {
                 width: 335px;
+                @include m.font(18px,400,v.$color__greywhite);
             }
         }
     }

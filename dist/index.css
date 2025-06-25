@@ -31,6 +31,12 @@
   font-style: normal;
   color: white;
 }
+.map-title__text {
+  font-size: 64px;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
 .map-background {
   position: relative;
   width: 1400px;
@@ -903,8 +909,16 @@ body, html {
 }
 
 h1, h2, h3, h4, h5, h6, ul, p, button {
+  font-size: 24px;
   margin: 0;
   padding: 0;
+}
+
+article h1,
+section h1,
+aside h1,
+nav h1 {
+  font-size: 24px;
 }
 
 a {
@@ -1709,6 +1723,10 @@ html {
   row-gap: 0;
 }
 .how-info__first-description {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #B0B0B0;
   width: 270px;
 }
 .how-info__second {
@@ -1738,6 +1756,10 @@ html {
   background-color: rgba(255, 255, 255, 0.08);
 }
 .how-info__second-description {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #B0B0B0;
   width: 330px;
 }
 .how-info__three {
@@ -1768,6 +1790,10 @@ html {
 }
 .how-info__three-description {
   width: 335px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #B0B0B0;
 }
 
 .info-about__section {
