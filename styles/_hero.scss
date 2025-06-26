@@ -155,9 +155,7 @@
     border-radius: 10px;
     &:hover {
         background-color: orangered;
-        width: 37px;
-        height: 37px;
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 }
 .hero-title__links-discord {
@@ -167,9 +165,8 @@
 
     &:hover {
         background-color: rgb(45, 45, 248);
-        width: 37px;
-        height: 37px;
-        transform: scale(1.1);
+        transform: scale(1.2);
+        
     }
 }
 .hero-title__links-twitter {
@@ -179,9 +176,7 @@
 
     &:hover {
         background-color: rgb(0, 89, 255);
-        width: 37px;
-        height: 37px;
-        transform: scale(1.1);
+                transform: scale(1.2);
     }
 }
 .hero-title__links-instagram {
@@ -190,8 +185,6 @@
     border-radius: 10px;
     &:hover {
         background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-        width: 37px;
-        height: 37px;
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 }

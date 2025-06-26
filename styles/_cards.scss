@@ -51,7 +51,6 @@
                 top:89%;
                 left:9%;
                 transform: rotate(0);
-                transform-origin: unset ;
                 @include m.font(32px, 600, v.$color__white);
 
                 @media(max-width:v.$media_lg){
@@ -63,9 +62,6 @@
                 align-items: center;
                 justify-content: center;
                 margin: 0 0 0 32px;
-                &-icon{
-                
-                }
             }
             }
 
