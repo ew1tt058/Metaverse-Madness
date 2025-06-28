@@ -3,8 +3,7 @@
 @use "placeholders";
 
 .hero {
-    overflow: hidden;
-    width: 100vw;
+    width: 100%;
     padding: 150px 0 0 0;
 
     &-title {
@@ -24,7 +23,6 @@
                 white-space: wrap;
                 text-align: center;
                 letter-spacing: 5px;
-                // @extend %hover-title;
                 @include m.font(120px, 800);
 
                 @media (max-width: v.$media_lg) {
@@ -57,7 +55,7 @@
                 @include m.d-flex(start, center, nowrap, column, 0, 30px);
 
                 @media (max-width: v.$media_md) {
-                    @include m.d-flex(center, start, nowrap, column, 0, 10px);
+                    @include m.d-flex(center, start, nowrap, column, 0, 20px);
                 }
 
                 @media (max-width: v.$media_sm) {
@@ -101,20 +99,21 @@
                 }
         }
         &__explore {
-            top: 55%;
+            top: 67%;
             left: 80%;
             z-index: 998;
-            width: 160px;
-            height: 390px;
+            width: 190px;
+            height: 190px;
             position: absolute;
             background: url("../assets/explore.webp") center/cover no-repeat;
+            filter:none;
             @media (max-width: v.$media_lg) {
-                top: 48%;
-                left: 80%;
+                top: 62%;
+                left: 72%;
             }
             @media (max-width: v.$media_md) {
-                top: 52%;
-                left: 78%;
+                top: 65%;
+                left: 70%;
             }
             @media (max-width: v.$media_sm) {
                 top: 48%;

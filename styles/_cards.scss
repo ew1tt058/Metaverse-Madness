@@ -6,7 +6,10 @@
     width: 100%;
     height: 100%;
     padding: 320px 0 0 0;
-
+        @media (max-width:v.$media_lg){
+        display: flex;
+        @include m.d-flex(center, center, nowrap, column, 0, 0)
+        }
     &-title {
         @include m.d-flex(center, center, nowrap, column, 0, 0);
         &__text {
@@ -14,15 +17,39 @@
             text-align: center;
             @include m.font(64px, 700, v.$color__white);
             
+            @media (max-width:v.$media_lg){  
+            @include m.font(56px, 700, v.$color__white);
+        }
+            @media (max-width:v.$media_md){  
+            width: 600px;
+            @include m.font(44px, 700, v.$color__white);
+        }
+            
         }
     }
 
     &-wrapper {
-        @include m.d-flex(center, center, nowrap, row, 10px, 0);
+        width: 100%;
         padding:  50px 0 0 0;
+        @include m.d-flex(center, center, wrap, row, 10px, 0);
+
         @media (max-width:v.$media_lg){
-        padding: 50px 20px 0 20px ;
+        gap: 20px;
+        display: grid;
+        max-width: 800px;
+        place-items: center ;
+        grid-template-areas: 
+        "card1 . card2"
+        "card3 . card4"
+        ". card5 .";
+        grid-template-columns: 2fr 2r 2fr;
         }
+        @media (max-width:v.$media_md){
+        place-items: center ;
+        max-width: 700px;
+        grid-template-columns: 2fr 2fr 2fr;
+        }
+
         &__hogwards {
             width: 100%;
             height: 560px;
@@ -33,22 +60,28 @@
             position: relative;
             border-radius: 24px;
             background: url("../assets/hogwards.webp") center/cover no-repeat;
-            transition: all 0.3s ease-in-out;
-            &:hover{
+            transition: 0.4s ease-in-out;
+            @media (max-width:v.$media_lg){
+                grid-area: card1;
+                width: 100%;
+                height: 360px;
+                max-width: 190px;
+            }
+        &:hover{
                 width: 100%;
                 cursor: pointer;
                 max-width: 370px;
                 @include m.d-flex(end, start, nowrap, column, 0, 30px);
 
                 @media(max-width:v.$media_lg){
-                max-width: 210px;
+                max-width: 370px;
                 }
             .description{
                 display: block;
                 padding: 0 0 96px 32px;
             }
             .title{              
-                top:89%;
+                top:86%;
                 left:9%;
                 transform: rotate(0);
                 @include m.font(32px, 600, v.$color__white);
@@ -78,6 +111,10 @@
                 position: absolute;
                 transform: rotate(-90deg);
                 @include m.font(32px, 600, v.$color__white);
+
+                    @media (max-width:v.$media_lg){
+                    top: 48%;
+                }
             }
         }
 
@@ -91,21 +128,28 @@
             position: relative;
             border-radius: 24px;
             background: url("../assets/upside.webp") center/cover no-repeat;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.4s ease-in-out;
+                @media (max-width:v.$media_lg){ 
+                    grid-area: card2;
+                    width: 100%;
+                    height: 360px;
+                    max-width: 190px;
+            }
             &:hover{
                 width: 100%;
                 cursor: pointer;
                 max-width: 370px;
                 @include m.d-flex(end, start, nowrap, column, 0, 30px);
+
                 @media(max-width:v.$media_lg){
-                max-width: 210px;
+                max-width: 370px;
                 }
             .description{
                 display: block;
                 padding: 0 0 96px 32px;
             }
             .title{              
-                top:89%;
+                top:86%;
                 left:9%;
                 transform: rotate(0);
                 transform-origin: unset ;
@@ -136,6 +180,9 @@
                 transform-origin: bottom ;
                 transform: rotate(-90deg);
                 @include m.font(32px, 600, v.$color__white);
+                    @media (max-width:v.$media_lg){
+                    top: 33%;
+                }
             }
         }
 
@@ -149,21 +196,28 @@
             position: relative;
             border-radius: 24px;
             background: url("../assets/kadirojo.webp") center/cover no-repeat;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            @media (max-width:v.$media_lg){
+                width: 100%;
+                height: 360px;
+                max-width: 190px;
+                grid-area: card3;
+                background: url("../assets/kadirojo.webp")no-repeat;
+        }
             &:hover{    
                 width: 100%;
                 cursor: pointer;
                 max-width: 370px;
                 @include m.d-flex(end, start, nowrap, column, 0, 30px);
                 @media(max-width:v.$media_lg){
-                max-width: 210px;
+                max-width: 370px;
                 }
             .description{
                 display: block;
                 padding: 0 0 96px 32px;
             }
             .title{              
-                top:89%;
+                top:86%;
                 left:9%;
                 transform: rotate(0);
                 transform-origin: unset ;
@@ -196,6 +250,10 @@
                 position: absolute;
                 transform: rotate(-90deg);
                 @include m.font(32px, 600, v.$color__white);
+
+                @media (max-width:v.$media_lg){
+                    top: 40%;
+                }
             }
         }
 
@@ -209,21 +267,28 @@
             position: relative;
             border-radius: 24px;
             background: url("../assets/island.webp") center/cover no-repeat;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            @media (max-width:v.$media_lg){
+                width: 100%;
+                height: 360px;
+                grid-area: card4;
+                max-width: 190px;
+                background: url("../assets/island.webp")no-repeat;
+        }
             &:hover{
                 width: 100%;
                 cursor: pointer;
                 max-width: 370px;
                 @include m.d-flex(end, start, nowrap, column, 0, 30px);
                 @media(max-width:v.$media_lg){
-                max-width: 210px;
+                max-width: 370px;
                 }
             .description{
                 display: block;
                 padding: 0 0 96px 32px;
             }
             .title{              
-                top:89%;
+                top:86%;
                 left:9%;
                 transform: rotate(0);
                 transform-origin: unset ;
@@ -255,6 +320,10 @@
                 position: absolute;
                 transform: rotate(-90deg);
                 @include m.font(32px, 600, v.$color__white);
+
+                @media (max-width:v.$media_lg){
+                    top: 44%;
+                }
             }
         }
 
@@ -268,26 +337,33 @@
             position: relative;
             border-radius: 24px;
             background: url("../assets/hawkins.webp") center/cover no-repeat;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            @media (max-width:v.$media_lg){
+                grid-area: card5;
+                width: 100%;
+                height: 360px;
+                max-width: 190px;
+        }
             &:hover{
                 width: 100%;
                 cursor: pointer;
                 max-width: 370px;
                 @include m.d-flex(end, start, nowrap, column, 0, 30px);
                 @media(max-width:v.$media_lg){
-                max-width: 210px;
+                max-width: 500px;
                 }
             .description{
                 display: block;
                 padding: 0 0 96px 32px;
             }
             .title{              
-                top:89%;
+                top:86%;
                 left:9%;
                 transform: rotate(0);
                 transform-origin: unset ;
                 @media(max-width:v.$media_lg){
                 @include m.font(24px, 600, v.$color__white);
+
                 }
             }
             .metaverse{
@@ -314,9 +390,14 @@
                 position: absolute;
                 transform: rotate(-90deg);
                 @include m.font(32px, 600, v.$color__white);
+                @include m.font(32px, 600, v.$color__white);
+                    @media (max-width:v.$media_lg){
+                    top: 49%;
+                }
             }
         }
     }
+
 }
 
 .metaverse {

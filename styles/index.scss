@@ -1,7 +1,10 @@
 @use 'importer';
 @use 'variables' as v;
 body {
+    
 margin: 0;
+    user-select: none;
+
 min-height: 100vh;
 background: 
     radial-gradient(500px at 10% 0%, rgba(142, 45, 226, 0.5), rgba(233, 45, 236, 0.2),rgba(106, 24, 238, 0.1),transparent 100%),

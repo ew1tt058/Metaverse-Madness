@@ -6,14 +6,24 @@
     width: 100%;
     height: 100%;
     padding: 240px 0 0 0;
+    position: relative;
     @include m.d-flex(center, center, nowrap, row, 101px, 0);
+    @media (max-width:v.$media_xxl){
+    @include m.d-flex(center, center, nowrap, row, 0, 0);
+    }
     &-info {
         width: 800px;
         height: 100%;
         padding: 0 0 0 135px;
-
+        @media(max-width:v.$media_lg){
+        padding: 0 0 0 90px;
+            }
         &__title {
             @include m.font(64px, 800, v.$color__white);
+            @media (max-width:v.$media_lg){            
+                @include m.font(58px, 800, v.$color__white);
+
+            }
         }
         &__categories {
             padding: 48px 0 0 0;
@@ -57,14 +67,27 @@
     }
 
     &-img {
-        width: 800px;
+        width: 100%;
         height: 700px;
+        @media (max-width:v.$media_xxl){
+    }
         &__planet {
-            width: 800px;
+            width: 100%;
             height: 700px;
+            max-width: 700px;
             position: absolute;
             z-index: 999;
 
+            @media(max-width:v.$media_xl){
+                max-width: 600px;
+                left: 48%;
+            }
+            @media (max-width:v.$media_lg){
+                max-width: 582px;
+                left: 41%;
+                top: 30%;
+
+            }
             &-background {
                 top: 44%;
                 right: -12%;
@@ -75,6 +98,19 @@
                 border-radius: 130px;
                 transform: rotate(-4deg);
                 background-color: rgba($color: #ffff, $alpha: 8%);
+
+                @media(max-width:v.$media_xl){
+                top: 42%;
+                right: -7%;
+                width: 500px;
+                transform: rotate(-5deg);
+            }
+                @media(max-width:v.$media_lg){
+                top: 44%;
+                right: 6%;
+                width: 500px;
+                transform: rotate(-5deg);
+            }
             }
         }
     }

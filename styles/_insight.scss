@@ -20,6 +20,12 @@
         &__launch {
             padding: 30px 0 0 0;
             @include m.d-flex(center, center, nowrap, row, 68px, 0);
+            @media(max-width:v.$media_xl){
+                width: 1000px;
+            }
+            @media(max-width:v.$media_lg){
+                width: 850px;
+            }
 
             .launch-img {
                 background: url("../assets/launch.webp") center/cover no-repeat;
@@ -34,11 +40,18 @@
 
                 &__title {
                     @include m.font(44px, 400, v.$color__white);
+                    @media(max-width:v.$media_lg){                  
+                    @include m.font(38px, 400, v.$color__white);
+            }
                 }
                 &__text {
                     padding: 16px 0 0 0;
                     line-height: 2;
                     @include m.font(20px, 300, rgba(#ffff, 0.5));
+
+                    @media(max-width:v.$media_lg){
+                    @include m.font(17px, 300, rgba(#ffff, 0.5));
+            }
                 }
             }
             .launch-button {
@@ -61,6 +74,12 @@
         }
         &__master {
             @include m.d-flex(center, center, nowrap, row, 68px, 0);
+            @media(max-width:v.$media_xl){
+                width: 1000px;
+            }
+            @media(max-width:v.$media_lg){
+                width: 850px;
+            }
             .master-img {
                 background: url("../assets/master.webp") center/cover no-repeat;
                 width: 270px;
@@ -74,11 +93,18 @@
 
                 &__title {
                     @include m.font(44px, 400, v.$color__white);
+                    @media(max-width:v.$media_lg){                  
+                    @include m.font(38px, 400, v.$color__white);
+            }
                 }
                 &__text {
                     padding: 16px 0 0 0;
                     line-height: 2;
                     @include m.font(20px, 300, rgba(#ffff, 0.5));
+
+                    @media(max-width:v.$media_lg){
+                    @include m.font(15px, 300, rgba(#ffff, 0.5));
+            }
                 }
             }
             .master-button {
@@ -101,6 +127,12 @@
 
         &__platform {
             @include m.d-flex(center, center, nowrap, row, 68px, 0);
+            @media(max-width:v.$media_xl){
+                width: 1000px;
+            }
+            @media(max-width:v.$media_lg){
+                width: 850px;
+            }
             .platform-img {
                 background: url("../assets/platform.webp") center/cover no-repeat;
                 width: 270px;
@@ -114,11 +146,17 @@
 
                 &__title {
                     @include m.font(44px, 400, v.$color__white);
+                    @media(max-width:v.$media_lg){                  
+                    @include m.font(38px, 400, v.$color__white);
+            }
                 }
                 &__text {
                     padding: 16px 0 0 0;
                     line-height: 2;
                     @include m.font(20px, 300, rgba(#ffff, 0.5));
+                    @media(max-width:v.$media_lg){
+                    @include m.font(17px, 300, rgba(#ffff, 0.5));
+            }
                 }
             }
             .platform-button {
@@ -141,10 +179,19 @@
     }
     &-footer{
         width: 100%;
+        max-width: 1400px;
         position: relative;
         padding-top: 250px;
         @include m.d-flex(center, center, nowrap, row, 32px, 0);
 
+        @media(max-width:v.$media_xl){   
+        width: 100%;
+        max-width: 1100px;
+            }
+        @media(max-width:v.$media_lg){   
+        width: 100%;
+        max-width: 900px;
+            }
         &__samantha{
             z-index: -1;
             width: 370px;
@@ -165,19 +212,27 @@
             &-description{
                 line-height: 2;
                 @include m.font(24px,2300,v.$color__white);
+                @media(max-width:v.$media_lg){   
+                @include m.font(18px,2300,v.$color__white);
+            }
             }
         }
         &__explore{
-            top: 23%;
-            left: 32%;
-            opacity: 0.9;
+            top: 31%;
+            left: 31%;
             z-index: 999;
-            width: 160px;
-            height: 360px;
+            width: 180px;
+            height: 180px;
             position: absolute;
             transform: rotate(-30deg);
             background: url("../assets/explore.webp")center/cover no-repeat;
-
+            @media(max-width:v.$media_xl){
+                left: 26%;
+            }
+            @media(max-width:v.$media_lg){
+                left: 24%;
+            }
+            
         }
         &__image{
             z-index: -1;
@@ -193,6 +248,9 @@
         border-bottom:3px solid v.$color__whiteopacity;
         padding: 250px 0 80px 0;
         @include m.d-flex(center, end, nowrap, row, 326px, 0);
+        @media(max-width:v.$media_lg){
+                @include m.d-flex(center, end, nowrap, row, 275px, 0);
+            }
         &__title{
             padding: 0 0 10px 0;
         &-text{

@@ -13,13 +13,22 @@
             backdrop-filter: blur(10px);
             @include m.d-flex(center, center, wrap, column, 0, 0);
 
+            @media (max-width:v.$media_xl){
+                width: 260px;
+                height: 185px;
+            }
             &__background{
-            @include m.d-flex(start, statt, wrap, column, 0, 0);
+            @include m.d-flex(start, start, wrap, column, 0, 0);
                 width: 260px;
                 height: 176px;
                 border-radius: 24px;
                 box-shadow: 0px 0px 40px rgb(238, 131, 211);
                 background: url("../assets/upside.webp") center / cover no-repeat;
+            
+            @media (max-width:v.$media_xl){
+                width: 240px;
+                height: 165px;
+            }
             }
             &__icon{
                 width: 100%;
@@ -67,6 +76,10 @@
                 padding: 135px 0 0 0;
                 align-self: center;
                 @include m.font(20px,600,v.$color__white);
+
+                @media (max-width:v.$media_xl){
+                padding: 125px 0 0 0;
+            }
             }
         }
         .card--hawkins{
@@ -80,6 +93,11 @@
             backdrop-filter: blur(10px);
             @include m.d-flex(center, center, wrap, column, 0, 0);
 
+            
+            @media (max-width:v.$media_xl){
+                width: 260px;
+                height: 185px;
+            }
             &__background{
             @include m.d-flex(start, start, wrap, column, 0, 0);
                 width: 260px;
@@ -87,6 +105,11 @@
                 border-radius: 24px;
                 box-shadow: 0px 0px 40px rgb(183, 75, 197);
                 background: url("../assets/hawkins.webp") center / cover no-repeat;
+                
+            @media (max-width:v.$media_xl){
+                width: 240px;
+                height: 165px;
+            }
             }
             &__icon{
                 width: 100%;
@@ -134,5 +157,9 @@
                 padding: 135px 0 0 0;
                 align-self: center;
                 @include m.font(20px,600,v.$color__white);
+                
+                @media (max-width:v.$media_xl){
+                padding: 125px 0 0 0;
+            }
             }
         }
