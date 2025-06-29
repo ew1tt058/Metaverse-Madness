@@ -15,10 +15,17 @@
         text-align: center;
         padding: 0 0 68px 0;
         @include m.font(50px, 600, v.$color__white);
+        @media (max-width: v.$media_md){
+        width: 700px;
+        }
         &__text{
             @include m.font(64px,700,v.$color__white);
-            @media (max-width: v.$media_lg){
+
+        @media (max-width: v.$media_lg){
         @include m.font(46px, 600, v.$color__white);
+        }
+        @media (max-width: v.$media_md){
+        @include m.font(40px, 700, v.$color__white);
         }
         }
 
@@ -44,6 +51,11 @@
             max-width: 920px;
             background-size: 100%;
         }
+        @media (max-width:v.$media_md){
+            width: 100%;
+            max-width: 754px;
+            background-size: 100%;
+        }
 
         &__women {
             &-icon {
@@ -57,6 +69,10 @@
                 @media (max-width:v.$media_xl){
                 top: 14%;
                     }
+                @media (max-width:v.$media_md){
+                top: 20%;
+                left: 6%;
+                }
 
                 &-img {
                     top: 7.7%;
@@ -77,6 +93,10 @@
                     top: 15.7%;
                     left: 10.8%;
                     }
+                    @media (max-width:v.$media_md){
+                    top: 21.6%;
+                    left: 9.4%;
+                    }
                 }
             }
         }
@@ -89,6 +109,10 @@
                 width: 100px;
                 height: 100px;
                 z-index: 1;
+                @media (max-width:v.$media_md){
+                top: 35%;
+                left: 45%;
+                    }
 
                 &-img {
                     border-radius: 36px;
@@ -109,6 +133,10 @@
                     top: 41.7%;
                     left: 50.8%;
                     }
+                    @media (max-width:v.$media_md){
+                    top: 36.7%;
+                    left: 48.5%;
+                    }
                 }
             }
         }
@@ -124,6 +152,10 @@
                 @media (max-width:v.$media_xl){
                 top: 57%;
                     }
+                @media (max-width:v.$media_md){
+                top: 52%;
+                    }
+
                 &-img {
                     border-radius: 36px;
                     top: 65.7%;
@@ -141,6 +173,10 @@
                     @media (max-width:v.$media_lg){
                     top: 58.7%;
                     left: 84.8%;
+                    }
+                    @media (max-width:v.$media_md){
+                    top: 53.8%;
+                    left: 85.4%;
                     }
                 }
             }

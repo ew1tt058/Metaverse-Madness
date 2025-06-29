@@ -21,19 +21,31 @@
         &__title{
             @include m.font(24px,900,v.$color__white);
             width: 160px;
-        @extend %hover;
+            @extend %hover;
+            @media(max-width:v.$media_md){
+                margin: 0 0 0 20px;
+            }
 
         }
         &__description{
             margin: 0 220px 0 220px;
             width: 380px;
             @include m.font(14px,300,rgba(255, 255, 255, 0.5));
+
             @media(max-width:v.$media_xl){              
                 @include m.font(13px,300,rgba(255, 255, 255, 0.5));
+            }
+
+            @media(max-width:v.$media_md){                          
+                margin: 0 80px 0 100px;
             }
         }
         &__svg{
         @include m.d-flex(center,center,nowrap,row,30px,0);
+        @media(max-width:v.$media_md){
+            margin: 0 20px 0 0;
+            @include m.d-flex(center,center,nowrap,row,20px,0);
+            }
         &-twitter{
             fill: white;
             width: 24px;

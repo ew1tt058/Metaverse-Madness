@@ -45,9 +45,13 @@
         grid-template-columns: 2fr 2r 2fr;
         }
         @media (max-width:v.$media_md){
-        place-items: center ;
-        max-width: 700px;
-        grid-template-columns: 2fr 2fr 2fr;
+            display: grid;
+            max-width: 700px;
+            place-items: center ;
+            grid-template-areas: 
+            "card1 card2 card3"
+            "card4 card5 .";
+            grid-template-columns: 2fr 2fr 2fr;
         }
 
         &__hogwards {
