@@ -42,7 +42,7 @@
         "card1 . card2"
         "card3 . card4"
         ". card5 .";
-        grid-template-columns: 2fr 2r 2fr;
+        grid-template-columns: 2fr 2fr 2fr;
         }
         @media (max-width:v.$media_md){
             display: grid;
@@ -50,8 +50,19 @@
             place-items: center ;
             grid-template-areas: 
             "card1 card2 card3"
-            "card4 card5 .";
+            "card4 card5 .";        
             grid-template-columns: 2fr 2fr 2fr;
+
+        }
+        @media (max-width:v.$media_sm){
+            display: grid;
+            max-width: 700px;
+            place-items: center ;
+            grid-template-areas: 
+            "card1 card2"
+            "card3 card4"
+            "card5 .";
+            grid-template-columns: 2fr 2fr;
         }
 
         &__hogwards {
@@ -81,6 +92,9 @@
 
                 @media(max-width:v.$media_lg){
                 max-width: 370px;
+                }
+                @media(max-width:v.$media_sm){
+                max-width: 250px;
                 }
             .description{
                 display: block;
@@ -152,6 +166,9 @@
                 @media(max-width:v.$media_lg){
                 max-width: 370px;
                 }
+                @media(max-width:v.$media_sm){
+                max-width: 250px;
+                }
             .description{
                 display: block;
                 padding: 0 0 96px 32px;
@@ -221,6 +238,9 @@
                 @include m.d-flex(end, start, nowrap, column, 0, 30px);
                 @media(max-width:v.$media_lg){
                 max-width: 370px;
+                }
+                @media(max-width:v.$media_sm){
+                max-width: 250px;
                 }
             .description{
                 display: block;
@@ -295,6 +315,9 @@
                 @media(max-width:v.$media_lg){
                 max-width: 370px;
                 }
+                @media(max-width:v.$media_sm){
+                max-width: 250px;
+                }
             .description{
                 display: block;
                 padding: 0 0 96px 32px;
@@ -365,6 +388,9 @@
                 @include m.d-flex(end, start, nowrap, column, 0, 30px);
                 @media(max-width:v.$media_lg){
                 max-width: 500px;
+                }
+                @media(max-width:v.$media_sm){
+                max-width: 250px;
                 }
             .description{
                 display: block;
