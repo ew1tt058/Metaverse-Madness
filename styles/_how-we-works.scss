@@ -16,6 +16,9 @@
     @media (max-width: v.$media_md) {    
         @include m.d-flex(center, center, nowrap, row, 40px, 0);
     }
+    @media (max-width: v.$media_sm) { 
+        @include m.d-flex(center, center, nowrap, row, 60px, 0);
+            }
     &-img {
         height: 100%;
         width: 100%;
@@ -47,6 +50,13 @@
         height: 300px;
         background-size: 300px 300px;
             }
+        @media (max-width: v.$media_sm) { 
+        top: 25%;
+        left: 18%;
+        width: 300px;
+        height: 300px;
+        background-size: 200px 200px;
+            }
 
         &-background {
             top: 52%;
@@ -74,6 +84,12 @@
             height: 160px;
             width: 340px;
             }
+            @media (max-width: v.$media_sm) { 
+            top: 47%;
+            right: -31%;
+            height: 140px;
+            width: 200px;
+            }
         }
     }
 
@@ -81,6 +97,9 @@
         @include m.d-flex(start, start, nowrap, column, 0, 30px);
         @media (max-width: v.$media_lg) {            
             width: 440px;
+            }
+            @media (max-width: v.$media_sm) { 
+            padding: 0 0 0 30px;
             }
         &__title {
             width: 540px;
@@ -91,7 +110,11 @@
             }
             @media (max-width: v.$media_lg) {    
                 @include m.font(24px, 600, v.$color__white);
-    }
+            }
+            @media (max-width: v.$media_sm) {    
+                @include m.font(20px, 600, v.$color__white);
+                padding: 0 0 0 10px;
+            }
         }
 
         &__first {
@@ -118,11 +141,14 @@
                 @include m.font(18px,400,v.$color__greywhite);
                 width: 270px;
                 @media (max-width: v.$media_xxl) {            
-            @include m.font(16px, 400, v.$color__greywhite);
-            }
+                @include m.font(16px, 400, v.$color__greywhite);
+                }
                 @media (max-width: v.$media_lg) {    
                 @include m.font(14px, 400, v.$color__greywhite);
-        }
+                }
+                @media (max-width: v.$media_sm) {
+                width: 210px;
+                }
             }
         }
 
@@ -153,11 +179,14 @@
                 @include m.font(18px,400,v.$color__greywhite);
                 width: 330px;
                 @media (max-width: v.$media_xxl) {            
-            @include m.font(16px, 400, v.$color__greywhite);
-            }
+                @include m.font(16px, 400, v.$color__greywhite);
+                }
                 @media (max-width: v.$media_lg) {    
                 @include m.font(14px, 400, v.$color__greywhite);
-        }
+                }
+                @media (max-width: v.$media_sm) {
+                width: 210px;
+                }
             }
         }
 
@@ -193,7 +222,10 @@
                 @media (max-width: v.$media_lg) {    
                 @include m.font(14px, 400, v.$color__greywhite);
                 width: 300px;
-        }
+            }   
+        @media (max-width: v.$media_sm) {
+                width: 210px;
+                }
             }
         }
     }
