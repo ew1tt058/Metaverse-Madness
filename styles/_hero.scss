@@ -152,7 +152,9 @@
     fill: white;
     transition: 0.3s ease-in-out;
     border-radius: 10px;
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
         background-color: orangered;
         transform: scale(1.2);
     }
@@ -162,7 +164,9 @@
     transition: 0.3s ease-in-out;
     border-radius: 10px;
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
         background-color: rgb(45, 45, 248);
         transform: scale(1.2);
         
@@ -173,7 +177,9 @@
     transition: 0.3s ease-in-out;
     border-radius: 10px;
 
-    &:hover {
+            &:hover,
+            &:active,
+            &:focus {
         background-color: rgb(0, 89, 255);
                 transform: scale(1.2);
     }
@@ -182,7 +188,9 @@
     fill: white;
     transition: 0.3s ease-in-out;
     border-radius: 10px;
-    &:hover {
+            &:hover,
+            &:active,
+            &:focus {
         background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
         transform: scale(1.2);
     }

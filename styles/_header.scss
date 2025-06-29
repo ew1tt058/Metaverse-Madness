@@ -12,7 +12,9 @@
     width: 24px;
     height: 24px;
     transition: all 0.3s ease-in-out;
-    &:hover{
+            &:hover,
+            &:active,
+            &:focus{
     fill: #fff;
         transform: scale(1.3);
         cursor: pointer;
@@ -28,7 +30,9 @@
 &__burger{
     fill: #fff;
     transition: all 0.3s ease-in-out;
-    &:hover{
+            &:hover,
+            &:active,
+            &:focus{
         cursor: pointer;
         fill: #9dff18;
         transform: scale(1.3);

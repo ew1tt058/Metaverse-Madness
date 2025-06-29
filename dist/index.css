@@ -1,7 +1,7 @@
 .footer-wrap__title, .header-wrapper__title {
   transition: all 0.3s ease-in-out;
 }
-.footer-wrap__title:hover, .header-wrapper__title:hover {
+.footer-wrap__title:hover, .header-wrapper__title:hover, .footer-wrap__title:active, .header-wrapper__title:active, .footer-wrap__title:focus, .header-wrapper__title:focus {
   color: #9dff18;
   text-shadow: 0 0 15px #ffd700;
   cursor: pointer;
@@ -480,7 +480,7 @@
   transition: 0.3s ease-in-out;
   border-radius: 10px;
 }
-.hero-title__links-reddit:hover {
+.hero-title__links-reddit:hover, .hero-title__links-reddit:active, .hero-title__links-reddit:focus {
   background-color: orangered;
   transform: scale(1.2);
 }
@@ -490,7 +490,7 @@
   transition: 0.3s ease-in-out;
   border-radius: 10px;
 }
-.hero-title__links-discord:hover {
+.hero-title__links-discord:hover, .hero-title__links-discord:active, .hero-title__links-discord:focus {
   background-color: rgb(45, 45, 248);
   transform: scale(1.2);
 }
@@ -500,7 +500,7 @@
   transition: 0.3s ease-in-out;
   border-radius: 10px;
 }
-.hero-title__links-twitter:hover {
+.hero-title__links-twitter:hover, .hero-title__links-twitter:active, .hero-title__links-twitter:focus {
   background-color: rgb(0, 89, 255);
   transform: scale(1.2);
 }
@@ -510,7 +510,7 @@
   transition: 0.3s ease-in-out;
   border-radius: 10px;
 }
-.hero-title__links-instagram:hover {
+.hero-title__links-instagram:hover, .hero-title__links-instagram:active, .hero-title__links-instagram:focus {
   background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
   transform: scale(1.2);
 }
@@ -693,7 +693,7 @@
     max-width: 190px;
   }
 }
-.cards-wrapper__hogwards:hover {
+.cards-wrapper__hogwards:hover, .cards-wrapper__hogwards:active, .cards-wrapper__hogwards:focus {
   width: 100%;
   cursor: pointer;
   max-width: 370px;
@@ -706,15 +706,15 @@
   row-gap: 30px;
 }
 @media (max-width: 992px) {
-  .cards-wrapper__hogwards:hover {
+  .cards-wrapper__hogwards:hover, .cards-wrapper__hogwards:active, .cards-wrapper__hogwards:focus {
     max-width: 370px;
   }
 }
-.cards-wrapper__hogwards:hover .description {
+.cards-wrapper__hogwards:hover .description, .cards-wrapper__hogwards:active .description, .cards-wrapper__hogwards:focus .description {
   display: block;
   padding: 0 0 96px 32px;
 }
-.cards-wrapper__hogwards:hover .title {
+.cards-wrapper__hogwards:hover .title, .cards-wrapper__hogwards:active .title, .cards-wrapper__hogwards:focus .title {
   top: 86%;
   left: 9%;
   transform: rotate(0);
@@ -724,14 +724,14 @@
   color: white;
 }
 @media (max-width: 992px) {
-  .cards-wrapper__hogwards:hover .title {
+  .cards-wrapper__hogwards:hover .title, .cards-wrapper__hogwards:active .title, .cards-wrapper__hogwards:focus .title {
     font-size: 24px;
     font-weight: 600;
     font-style: normal;
     color: white;
   }
 }
-.cards-wrapper__hogwards:hover .metaverse {
+.cards-wrapper__hogwards:hover .metaverse, .cards-wrapper__hogwards:active .metaverse, .cards-wrapper__hogwards:focus .metaverse {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -781,7 +781,7 @@
     max-width: 190px;
   }
 }
-.cards-wrapper__upside:hover {
+.cards-wrapper__upside:hover, .cards-wrapper__upside:active, .cards-wrapper__upside:focus {
   width: 100%;
   cursor: pointer;
   max-width: 370px;
@@ -794,29 +794,29 @@
   row-gap: 30px;
 }
 @media (max-width: 992px) {
-  .cards-wrapper__upside:hover {
+  .cards-wrapper__upside:hover, .cards-wrapper__upside:active, .cards-wrapper__upside:focus {
     max-width: 370px;
   }
 }
-.cards-wrapper__upside:hover .description {
+.cards-wrapper__upside:hover .description, .cards-wrapper__upside:active .description, .cards-wrapper__upside:focus .description {
   display: block;
   padding: 0 0 96px 32px;
 }
-.cards-wrapper__upside:hover .title {
+.cards-wrapper__upside:hover .title, .cards-wrapper__upside:active .title, .cards-wrapper__upside:focus .title {
   top: 86%;
   left: 9%;
   transform: rotate(0);
   transform-origin: unset;
 }
 @media (max-width: 992px) {
-  .cards-wrapper__upside:hover .title {
+  .cards-wrapper__upside:hover .title, .cards-wrapper__upside:active .title, .cards-wrapper__upside:focus .title {
     font-size: 20px;
     font-weight: 600;
     font-style: normal;
     color: white;
   }
 }
-.cards-wrapper__upside:hover .metaverse {
+.cards-wrapper__upside:hover .metaverse, .cards-wrapper__upside:active .metaverse, .cards-wrapper__upside:focus .metaverse {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -867,7 +867,7 @@
     background: url("../assets/kadirojo.webp") no-repeat;
   }
 }
-.cards-wrapper__kadirojo:hover {
+.cards-wrapper__kadirojo:hover, .cards-wrapper__kadirojo:active, .cards-wrapper__kadirojo:focus {
   width: 100%;
   cursor: pointer;
   max-width: 370px;
@@ -880,15 +880,15 @@
   row-gap: 30px;
 }
 @media (max-width: 992px) {
-  .cards-wrapper__kadirojo:hover {
+  .cards-wrapper__kadirojo:hover, .cards-wrapper__kadirojo:active, .cards-wrapper__kadirojo:focus {
     max-width: 370px;
   }
 }
-.cards-wrapper__kadirojo:hover .description {
+.cards-wrapper__kadirojo:hover .description, .cards-wrapper__kadirojo:active .description, .cards-wrapper__kadirojo:focus .description {
   display: block;
   padding: 0 0 96px 32px;
 }
-.cards-wrapper__kadirojo:hover .title {
+.cards-wrapper__kadirojo:hover .title, .cards-wrapper__kadirojo:active .title, .cards-wrapper__kadirojo:focus .title {
   top: 86%;
   left: 9%;
   transform: rotate(0);
@@ -899,14 +899,14 @@
   color: white;
 }
 @media (max-width: 992px) {
-  .cards-wrapper__kadirojo:hover .title {
+  .cards-wrapper__kadirojo:hover .title, .cards-wrapper__kadirojo:active .title, .cards-wrapper__kadirojo:focus .title {
     font-size: 22px;
     font-weight: 600;
     font-style: normal;
     color: white;
   }
 }
-.cards-wrapper__kadirojo:hover .metaverse {
+.cards-wrapper__kadirojo:hover .metaverse, .cards-wrapper__kadirojo:active .metaverse, .cards-wrapper__kadirojo:focus .metaverse {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -957,7 +957,7 @@
     background: url("../assets/island.webp") no-repeat;
   }
 }
-.cards-wrapper__island:hover {
+.cards-wrapper__island:hover, .cards-wrapper__island:active, .cards-wrapper__island:focus {
   width: 100%;
   cursor: pointer;
   max-width: 370px;
@@ -970,29 +970,29 @@
   row-gap: 30px;
 }
 @media (max-width: 992px) {
-  .cards-wrapper__island:hover {
+  .cards-wrapper__island:hover, .cards-wrapper__island:active, .cards-wrapper__island:focus {
     max-width: 370px;
   }
 }
-.cards-wrapper__island:hover .description {
+.cards-wrapper__island:hover .description, .cards-wrapper__island:active .description, .cards-wrapper__island:focus .description {
   display: block;
   padding: 0 0 96px 32px;
 }
-.cards-wrapper__island:hover .title {
+.cards-wrapper__island:hover .title, .cards-wrapper__island:active .title, .cards-wrapper__island:focus .title {
   top: 86%;
   left: 9%;
   transform: rotate(0);
   transform-origin: unset;
 }
 @media (max-width: 992px) {
-  .cards-wrapper__island:hover .title {
+  .cards-wrapper__island:hover .title, .cards-wrapper__island:active .title, .cards-wrapper__island:focus .title {
     font-size: 24px;
     font-weight: 600;
     font-style: normal;
     color: white;
   }
 }
-.cards-wrapper__island:hover .metaverse {
+.cards-wrapper__island:hover .metaverse, .cards-wrapper__island:active .metaverse, .cards-wrapper__island:focus .metaverse {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1042,7 +1042,7 @@
     max-width: 190px;
   }
 }
-.cards-wrapper__hawkins:hover {
+.cards-wrapper__hawkins:hover, .cards-wrapper__hawkins:active, .cards-wrapper__hawkins:focus {
   width: 100%;
   cursor: pointer;
   max-width: 370px;
@@ -1055,29 +1055,29 @@
   row-gap: 30px;
 }
 @media (max-width: 992px) {
-  .cards-wrapper__hawkins:hover {
+  .cards-wrapper__hawkins:hover, .cards-wrapper__hawkins:active, .cards-wrapper__hawkins:focus {
     max-width: 500px;
   }
 }
-.cards-wrapper__hawkins:hover .description {
+.cards-wrapper__hawkins:hover .description, .cards-wrapper__hawkins:active .description, .cards-wrapper__hawkins:focus .description {
   display: block;
   padding: 0 0 96px 32px;
 }
-.cards-wrapper__hawkins:hover .title {
+.cards-wrapper__hawkins:hover .title, .cards-wrapper__hawkins:active .title, .cards-wrapper__hawkins:focus .title {
   top: 86%;
   left: 9%;
   transform: rotate(0);
   transform-origin: unset;
 }
 @media (max-width: 992px) {
-  .cards-wrapper__hawkins:hover .title {
+  .cards-wrapper__hawkins:hover .title, .cards-wrapper__hawkins:active .title, .cards-wrapper__hawkins:focus .title {
     font-size: 24px;
     font-weight: 600;
     font-style: normal;
     color: white;
   }
 }
-.cards-wrapper__hawkins:hover .metaverse {
+.cards-wrapper__hawkins:hover .metaverse, .cards-wrapper__hawkins:active .metaverse, .cards-wrapper__hawkins:focus .metaverse {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1203,7 +1203,7 @@ html {
   height: 24px;
   transition: all 0.3s ease-in-out;
 }
-.header-wrapper__search:hover {
+.header-wrapper__search:hover, .header-wrapper__search:active, .header-wrapper__search:focus {
   fill: #fff;
   transform: scale(1.3);
   cursor: pointer;
@@ -1220,7 +1220,7 @@ html {
   fill: #fff;
   transition: all 0.3s ease-in-out;
 }
-.header-wrapper__burger:hover {
+.header-wrapper__burger:hover, .header-wrapper__burger:active, .header-wrapper__burger:focus {
   cursor: pointer;
   fill: #9dff18;
   transform: scale(1.3);
@@ -1349,10 +1349,10 @@ html {
   height: 100px;
   transition: 0.3s ease-in-out;
 }
-.insight-blocks__launch .launch-button__svg:hover {
+.insight-blocks__launch .launch-button__svg:hover, .insight-blocks__launch .launch-button__svg:active, .insight-blocks__launch .launch-button__svg:focus {
   transform: scale(1.1);
 }
-.insight-blocks__launch .launch-button:hover {
+.insight-blocks__launch .launch-button:hover, .insight-blocks__launch .launch-button:active, .insight-blocks__launch .launch-button:focus {
   cursor: pointer;
 }
 .insight-blocks__master {
@@ -1441,10 +1441,10 @@ html {
   height: 100px;
   transition: 0.3s ease-in-out;
 }
-.insight-blocks__master .master-button__svg:hover {
+.insight-blocks__master .master-button__svg:hover, .insight-blocks__master .master-button__svg:active, .insight-blocks__master .master-button__svg:focus {
   transform: scale(1.1);
 }
-.insight-blocks__master .master-button:hover {
+.insight-blocks__master .master-button:hover, .insight-blocks__master .master-button:active, .insight-blocks__master .master-button:focus {
   cursor: pointer;
 }
 .insight-blocks__platform {
@@ -1533,10 +1533,10 @@ html {
   height: 100px;
   transition: 0.3s ease-in-out;
 }
-.insight-blocks__platform .platform-button__svg:hover {
+.insight-blocks__platform .platform-button__svg:hover, .insight-blocks__platform .platform-button__svg:active, .insight-blocks__platform .platform-button__svg:focus {
   transform: scale(1.1);
 }
-.insight-blocks__platform .platform-button:hover {
+.insight-blocks__platform .platform-button:hover, .insight-blocks__platform .platform-button:active, .insight-blocks__platform .platform-button:focus {
   cursor: pointer;
 }
 .insight-footer {
@@ -1711,7 +1711,7 @@ html {
   font-style: normal;
   color: white;
 }
-.insight-bottom__button:hover {
+.insight-bottom__button:hover, .insight-bottom__button:active, .insight-bottom__button:focus {
   cursor: pointer;
   background-color: #4B0082;
 }
@@ -1809,7 +1809,7 @@ html {
   height: 24px;
   transition: all 0.3s;
 }
-.footer-wrap__svg-twitter:hover {
+.footer-wrap__svg-twitter:hover, .footer-wrap__svg-twitter:active, .footer-wrap__svg-twitter:focus {
   fill: #ffbe00;
   cursor: pointer;
   transform: scale(1.5);
@@ -1820,7 +1820,7 @@ html {
   height: 24px;
   transition: all 0.3s;
 }
-.footer-wrap__svg-linkedin:hover {
+.footer-wrap__svg-linkedin:hover, .footer-wrap__svg-linkedin:active, .footer-wrap__svg-linkedin:focus {
   fill: #ffbe00;
   cursor: pointer;
   transform: scale(1.5);
@@ -1831,7 +1831,7 @@ html {
   height: 24px;
   transition: all 0.3s;
 }
-.footer-wrap__svg-instagram:hover {
+.footer-wrap__svg-instagram:hover, .footer-wrap__svg-instagram:active, .footer-wrap__svg-instagram:focus {
   fill: #ffbe00;
   cursor: pointer;
   transform: scale(1.5);
@@ -1842,7 +1842,7 @@ html {
   height: 24px;
   transition: all 0.3s;
 }
-.footer-wrap__svg-facebook:hover {
+.footer-wrap__svg-facebook:hover, .footer-wrap__svg-facebook:active, .footer-wrap__svg-facebook:focus {
   fill: #ffbe00;
   cursor: pointer;
   transform: scale(1.5);
