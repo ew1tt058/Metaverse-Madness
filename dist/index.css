@@ -536,8 +536,10 @@
 }
 @media (max-width: 428px) {
   .hero-image__explore {
-    top: 45%;
-    left: 55%;
+    top: 50%;
+    left: 64%;
+    width: 150px;
+    height: 150px;
   }
 }
 @media (max-width: 400px) {
@@ -738,6 +740,14 @@
   .cards-title__text {
     width: 600px;
     font-size: 44px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+  }
+}
+@media (max-width: 576px) {
+  .cards-title__text {
+    font-size: 32px;
     font-weight: 700;
     font-style: normal;
     color: white;
@@ -3067,8 +3077,8 @@ html {
 }
 @media (max-width: 428px) {
   .new-img__planet {
-    top: 35%;
-    left: -5%;
+    top: 36%;
+    left: -10%;
     width: 200px;
     height: 200px;
     background-size: 200px 200px;
@@ -3081,8 +3091,8 @@ html {
   }
 }
 .new-img__planet-background {
-  top: 47%;
-  right: -18%;
+  top: 45%;
+  right: -17%;
   z-index: 2;
   width: 560px;
   height: 260px;
@@ -3093,8 +3103,8 @@ html {
 }
 @media (max-width: 1440px) {
   .new-img__planet-background {
-    top: 48%;
-    right: -20%;
+    top: 47%;
+    right: -18%;
     width: 500px;
     transform: rotate(-5deg);
   }
@@ -3125,7 +3135,7 @@ html {
 }
 @media (max-width: 576px) {
   .new-img__planet-background {
-    top: 60%;
+    top: 58%;
     right: -8%;
     width: 210px;
     height: 110px;
@@ -3300,9 +3310,9 @@ html {
 }
 @media (max-width: 576px) {
   .how-img__planet-background {
-    top: 47%;
+    top: 52%;
     right: -38%;
-    height: 140px;
+    height: 110px;
     width: 200px;
   }
 }

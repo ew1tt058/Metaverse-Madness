@@ -27,6 +27,9 @@
             width: 600px;
             @include m.font(44px, 700, v.$color__white);
         }
+            @media (max-width:v.$media_sm){
+            @include m.font(32px, 700, v.$color__white);
+        }
             @media (max-width: v.$media_min) {
             width: 428px;
             @include m.font(34px, 700, v.$color__white);

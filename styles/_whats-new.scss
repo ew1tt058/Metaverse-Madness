@@ -147,8 +147,8 @@
             }
 
             @media (max-width:v.$media_min){
-                top: 35%;
-                left: -5%;
+                top: 36%;
+                left: -10%;
                 width: 200px;
                 height: 200px;
                 background-size: 200px 200px;
@@ -160,7 +160,7 @@
 
             &-background {
                 top: 45%;
-                right: -18%;
+                right: -17%;
                 z-index: 2;
                 width: 560px;
                 height: 260px;
@@ -170,8 +170,8 @@
                 background-color: rgba($color: #ffff, $alpha: 8%);
 
                 @media(max-width:v.$media_xxl){
-                top: 48%;
-                right: -20%;
+                top: 47%;
+                right: -18%;
                 width: 500px;
                 transform: rotate(-5deg);
             }
@@ -194,7 +194,7 @@
                 height: 160px;
             }
             @media (max-width:v.$media_sm){
-                top: 60%;
+                top: 58%;
                 right: -8%;
                 width: 210px;
                 height: 110px;

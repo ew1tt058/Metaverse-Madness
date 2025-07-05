@@ -122,8 +122,10 @@
                 left: 61%;
             }
             @media (max-width: v.$media_min) {
-                top: 45%;
-                left: 55%;
+                top: 50%;
+                left: 64%;
+                width: 150px;
+                height: 150px;
             }
             @media (max-width: v.$media_mini) {
                 top: 50%;
