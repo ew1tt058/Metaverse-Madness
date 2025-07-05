@@ -15,6 +15,14 @@
         &__title {
             padding-top: 5px;
             @include m.font(64px, 600, v.$color__white);
+            @media (max-width: v.$media_sm) {
+                @include m.font(64px, 600, v.$color__white);
+                text-align: center;
+            }
+            @media (max-width: v.$media_min) {
+                @include m.font(50px, 600, v.$color__white);
+                text-align: center;
+            }
         }
 
         &__launch {
@@ -27,9 +35,12 @@
                 width: 850px;
             }
             @media (max-width: v.$media_md) {
-                width: 768px;
+                width: 100%;
             }
-
+            @media (max-width: v.$media_sm) {
+                width: 100%;
+                @include m.d-flex(center, center, nowrap, row, 20px, 0);
+            }
             .launch-img {
                 background: url("../assets/launch.webp") center/cover no-repeat;
                 width: 270px;
@@ -39,6 +50,9 @@
                 @media (max-width: v.$media_md) {
                     width: 300px;
                     margin: 0 0 0 10px;
+                }
+                @media (max-width: v.$media_min) {
+                background: url("../assets/launch.webp")no-repeat;
                 }
             }
             .launch-description {
@@ -54,6 +68,12 @@
                         @media (max-width: v.$media_md) {
                             @include m.font(36px, 400, v.$color__white);
                         }
+                        @media (max-width: v.$media_sm) {
+                            @include m.font(30px, 400, v.$color__white);
+                        }
+                        @media (max-width: v.$media_min) {
+                            @include m.font(19px, 400, v.$color__white);
+                        }
                     }
                 }
                 &__text {
@@ -64,6 +84,9 @@
                     @media (max-width: v.$media_lg) {
                         @include m.font(17px, 300, rgba(#ffff, 0.5));
                     }
+                    @media (max-width: v.$media_min) {
+                        @include m.font(14px, 300, rgba(#ffff, 0.5));
+                        }
                 }
             }
             .launch-button {
@@ -101,7 +124,11 @@
                 width: 850px;
             }
             @media (max-width: v.$media_md) {
-                width: 768px;
+                width: 100%;
+            }
+            @media (max-width: v.$media_sm) {
+                width: 100%;
+                @include m.d-flex(center, center, nowrap, row, 20px, 0);
             }
             .master-img {
                 background: url("../assets/master.webp") center/cover no-repeat;
@@ -113,6 +140,9 @@
                     width: 300px;
                     margin: 0 0 0 10px;
                 }
+                @media (max-width: v.$media_min) {
+                    background: url("../assets/master.webp")no-repeat;
+                }
             }
             .master-description {
                 width: 690px;
@@ -123,6 +153,12 @@
                     @media (max-width: v.$media_lg) {
                         @include m.font(38px, 400, v.$color__white);
                     }
+                    @media (max-width: v.$media_sm) {
+                            @include m.font(30px, 400, v.$color__white);
+                    }
+                    @media (max-width: v.$media_min) {
+                            @include m.font(19px, 400, v.$color__white);
+                    }
                 }
                 &__text {
                     padding: 16px 0 0 0;
@@ -131,6 +167,9 @@
 
                     @media (max-width: v.$media_lg) {
                         @include m.font(15px, 300, rgba(#ffff, 0.5));
+                    }
+                    @media (max-width: v.$media_min) {
+                        @include m.font(14px, 300, rgba(#ffff, 0.5));
                     }
                 }
             }
@@ -160,7 +199,6 @@
                 }
             }
         }
-
         &__platform {
             @include m.d-flex(center, center, nowrap, row, 68px, 0);
             @media (max-width: v.$media_xl) {
@@ -170,7 +208,11 @@
                 width: 850px;
             }
             @media (max-width: v.$media_md) {
-                width: 768px;
+                width: 100%;
+            }
+            @media (max-width: v.$media_sm) {
+                width: 100%;
+                @include m.d-flex(center, center, nowrap, row, 20px, 0);
             }
             .platform-img {
                 background: url("../assets/platform.webp") center/cover no-repeat;
@@ -182,6 +224,9 @@
                     width: 300px;
                     margin: 0 0 0 10px;
                 }
+                @media (max-width: v.$media_min) {
+                background: url("../assets/platform.webp")no-repeat;
+                }
             }
             .platform-description {
                 width: 690px;
@@ -192,6 +237,12 @@
                     @media (max-width: v.$media_lg) {
                         @include m.font(38px, 400, v.$color__white);
                     }
+                    @media (max-width: v.$media_sm) {
+                            @include m.font(30px, 400, v.$color__white);
+                    }
+                    @media (max-width: v.$media_min) {
+                            @include m.font(19px, 400, v.$color__white);
+                    }
                 }
                 &__text {
                     padding: 16px 0 0 0;
@@ -199,6 +250,9 @@
                     @include m.font(20px, 300, rgba(#ffff, 0.5));
                     @media (max-width: v.$media_lg) {
                         @include m.font(17px, 300, rgba(#ffff, 0.5));
+                    }
+                    @media (max-width: v.$media_min) {
+                        @include m.font(14px, 300, rgba(#ffff, 0.5));
                     }
                 }
             }
@@ -247,6 +301,11 @@
             width: 100%;
             max-width: 740px;
         }
+        @media (max-width: v.$media_sm) {
+            width: 100%;
+            max-width: 576px;
+            @include m.d-flex(center, center, nowrap, column, 0, 30px);
+        }
         &__samantha {
             z-index: -1;
             width: 370px;
@@ -257,6 +316,12 @@
             border: 1px solid grey;
             @include m.d-flex(end, start, nowrap, column, 0, 8px);
             background-color: rgba($color: #ffff, $alpha: 5%);
+
+            @media (max-width: v.$media_sm) {
+            width: 376px;
+            height: 376px;
+            }
+
             &-title {
                 @include m.font(32px, 600, v.$color__white);
             }
@@ -287,6 +352,10 @@
             @media (max-width: v.$media_lg) {
                 left: 24%;
             }
+            @media (max-width: v.$media_sm) {
+                left: 36%;
+                top: 53%;
+            }
         }
         &__image {
             z-index: -1;
@@ -295,6 +364,10 @@
             position: relative;
             border-radius: 24px;
             background: url("../assets/rocket.webp") center/cover no-repeat;
+            @media (max-width: v.$media_sm) {
+            width: 376px;
+            height: 376px;
+            }
         }
     }
     &-bottom {
@@ -308,11 +381,24 @@
         @media (max-width: v.$media_md) {
             @include m.d-flex(center, end, nowrap, row, 80px, 0);
         }
+        @media (max-width: v.$media_sm) {
+            width: 576px;
+            @include m.d-flex(center, end, nowrap, row, 20px, 0);
+        }
+        @media (max-width: v.$media_sm) {
+            width: 428px;
+            @include m.d-flex(center, center, nowrap, column, 0, 30px);
+        }
         &__title {
             padding: 0 0 10px 0;
             &-text {
                 @include m.font(38px, 800, v.$color__white);
+
+                @media (max-width: v.$media_sm) {
+                @include m.font(24px, 800, v.$color__white);
+                }
             }
+            
         }
         &__button {
             border: none;
@@ -322,7 +408,10 @@
             transition: all 0.3s ease-in-out;
             background-color: v.$color__ocean;
             @include m.d-flex(center, center, nowrap, row, 12px, 0);
-
+            @media (max-width: v.$media_sm) {
+            height: 50px;
+            width: 210px;
+                }
             &-svg {
                 width: 24px;
                 height: 18px;
@@ -330,6 +419,9 @@
 
             &-text {
                 @include m.font(14px, 300, v.$color__white);
+                @media (max-width: v.$media_sm) {
+                @include m.font(12px, 300, v.$color__white);
+                }
             }
             &:hover,
             &:active,

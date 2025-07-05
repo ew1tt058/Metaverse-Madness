@@ -23,6 +23,18 @@
         width: 240px;
         height: 170px;
     }
+    @media (max-width: v.$media_sm) {
+        top: 35%;
+        left: 12%;
+        width: 180px;
+        height: 110px;
+    }
+    @media (max-width: v.$media_min) {
+        top: 45%;
+        left: 12%;
+        width: 130px;
+        height: 90px;
+    }
     &__background {
         @include m.d-flex(start, start, wrap, column, 0, 0);
         width: 260px;
@@ -39,6 +51,14 @@
             width: 220px;
             height: 150px;
         }
+        @media (max-width: v.$media_sm) {
+            width: 170px;
+            height: 100px;
+        }
+        @media (max-width: v.$media_min) {
+            width: 120px;
+            height: 80px;
+        }
     }
     &__icon {
         width: 100%;
@@ -49,7 +69,12 @@
         position: absolute;
         flex-direction: row;
         padding: 74px 0 0 10px;
-
+        @media (max-width: v.$media_sm) {
+        padding: 25px 0 0 10px;
+        }
+        @media (max-width: v.$media_min) {
+        padding: 7px 0 0 10px;
+        }
         &-girl {
             z-index: 3;
             position: relative;
@@ -83,6 +108,9 @@
         @media (max-width: v.$media_md) {
             left: -10%;
         }
+        @media (max-width: v.$media_md) {
+        @include m.font(10px, 400, v.$color__white);
+        }
     }
     &__title {
         padding: 135px 0 0 0;
@@ -95,6 +123,15 @@
         @media (max-width: v.$media_md) {
             padding: 115px 0 0 0;
         }
+        @media (max-width: v.$media_sm) {
+            padding: 75px 0 0 0;
+        @include m.font(15px, 600, v.$color__white);
+        }
+        @media (max-width: v.$media_min) {
+            padding: 55px 0 0 0;
+        @include m.font(12px, 600, v.$color__white);
+        }
+
     }
 }
 .card--hawkins {
@@ -117,6 +154,16 @@
         width: 240px;
         height: 170px;
     }
+    @media (max-width: v.$media_md) {
+        top: 3%;
+        width: 180px;
+        height: 110px;
+    }
+    @media (max-width: v.$media_min) {
+        top: 14%;
+        width: 130px;
+        height: 90px;
+    }
     &__background {
         width: 260px;
         height: 176px;
@@ -133,6 +180,14 @@
             width: 220px;
             height: 150px;
         }
+        @media (max-width: v.$media_md) {
+            width: 170px;
+            height: 100px;
+        }
+        @media (max-width: v.$media_min) {
+            width: 120px;
+            height: 80px;
+        }
     }
     &__icon {
         width: 100%;
@@ -143,7 +198,12 @@
         position: absolute;
         flex-direction: row;
         padding: 74px 0 0 10px;
-
+        @media (max-width: v.$media_sm) {
+            padding: 25px 0 0 10px;
+        }
+        @media (max-width: v.$media_min) {
+            padding: 7px 0 0 10px;
+        }
         &-girl {
             z-index: 3;
             position: relative;
@@ -178,6 +238,9 @@
         @media (max-width: v.$media_md) {
             left: -10%;
         }
+        @media (max-width: v.$media_md) {
+        @include m.font(10px, 400, v.$color__white);
+        }
     }
     &__title {
         padding: 135px 0 0 0;
@@ -189,6 +252,14 @@
         }
         @media (max-width: v.$media_md) {
             padding: 120px 0 0 0;
+        }
+        @media (max-width: v.$media_sm) {
+            @include m.font(15px, 600, v.$color__white);
+            padding: 75px 0 0 0;
+        }
+        @media (max-width: v.$media_min) {
+            @include m.font(15px, 600, v.$color__white);
+            padding: 55px 0 0 0;
         }
     }
 }
