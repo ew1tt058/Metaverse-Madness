@@ -99,7 +99,7 @@
             }
             @media (max-width: v.$media_sm) { 
             top: 47%;
-            right: -31%;
+            right: -38%;
             height: 140px;
             width: 200px;
             }
@@ -184,7 +184,7 @@
                 @media (max-width: v.$media_xxl) {            
                 @include m.font(16px, 400, v.$color__greywhite);
                 }
-                @media (max-width: v.$media_lg) {    
+                @media (max-width: v.$media_md) {    
                 @include m.font(14px, 400, v.$color__greywhite);
                 }
                 @media (max-width: v.$media_sm) {
@@ -240,7 +240,7 @@
                 @media (max-width: v.$media_xxl) {            
                 @include m.font(16px, 400, v.$color__greywhite);
                 }
-                @media (max-width: v.$media_lg) {    
+                @media (max-width: v.$media_md) {    
                 @include m.font(14px, 400, v.$color__greywhite);
                 }
                 @media (max-width: v.$media_sm) {
@@ -295,11 +295,13 @@
                 @include m.font(18px,400,v.$color__greywhite);
                 @media (max-width: v.$media_xxl) {            
                 @include m.font(16px, 400, v.$color__greywhite);
+                } 
+                @media (max-width: v.$media_lg) {   
+                    width: 300px;
                 }   
-                @media (max-width: v.$media_lg) {    
+                @media (max-width: v.$media_md) {    
                 @include m.font(14px, 400, v.$color__greywhite);
-                width: 300px;
-                }   
+                } 
                 @media (max-width: v.$media_sm) {
                 width: 210px;
                 }
