@@ -23,6 +23,10 @@
                 @include m.font(50px, 600, v.$color__white);
                 text-align: center;
             }
+            @media (max-width: v.$media_mini) {
+                @include m.font(40px, 600, v.$color__white);
+                text-align: center;
+            }
         }
 
         &__launch {
@@ -38,7 +42,6 @@
                 width: 100%;
             }
             @media (max-width: v.$media_sm) {
-                width: 100%;
                 @include m.d-flex(center, center, nowrap, row, 20px, 0);
             }
             .launch-img {
@@ -74,6 +77,9 @@
                         @media (max-width: v.$media_min) {
                             @include m.font(19px, 400, v.$color__white);
                         }
+                        @media (max-width: v.$media_mini) {
+                            @include m.font(17px, 400, v.$color__white);
+                        }
                     }
                 }
                 &__text {
@@ -86,6 +92,9 @@
                     }
                     @media (max-width: v.$media_min) {
                         @include m.font(14px, 300, rgba(#ffff, 0.5));
+                        }
+                    @media (max-width: v.$media_mini) {
+                        @include m.font(13px, 300, rgba(#ffff, 0.5));
                         }
                 }
             }
@@ -159,6 +168,9 @@
                     @media (max-width: v.$media_min) {
                             @include m.font(19px, 400, v.$color__white);
                     }
+                    @media (max-width: v.$media_mini) {
+                            @include m.font(17px, 400, v.$color__white);
+                    }
                 }
                 &__text {
                     padding: 16px 0 0 0;
@@ -170,6 +182,9 @@
                     }
                     @media (max-width: v.$media_min) {
                         @include m.font(14px, 300, rgba(#ffff, 0.5));
+                    }
+                    @media (max-width: v.$media_mini) {
+                        @include m.font(13px, 300, rgba(#ffff, 0.5));
                     }
                 }
             }
@@ -243,6 +258,9 @@
                     @media (max-width: v.$media_min) {
                             @include m.font(19px, 400, v.$color__white);
                     }
+                    @media (max-width: v.$media_mini) {
+                            @include m.font(17px, 400, v.$color__white);
+                    }
                 }
                 &__text {
                     padding: 16px 0 0 0;
@@ -253,6 +271,9 @@
                     }
                     @media (max-width: v.$media_min) {
                         @include m.font(14px, 300, rgba(#ffff, 0.5));
+                    }
+                    @media (max-width: v.$media_mini) {
+                        @include m.font(13px, 300, rgba(#ffff, 0.5));
                     }
                 }
             }
@@ -385,7 +406,7 @@
             width: 576px;
             @include m.d-flex(center, end, nowrap, row, 20px, 0);
         }
-        @media (max-width: v.$media_sm) {
+        @media (max-width: v.$media_min) {
             width: 428px;
             @include m.d-flex(center, center, nowrap, column, 0, 30px);
         }

@@ -59,7 +59,6 @@
             "card1 card2 card3"
             "card4 card5 .";        
             grid-template-columns: 2fr 2fr 2fr;
-
         }
         @media (max-width:v.$media_sm){
             display: grid;
@@ -70,6 +69,9 @@
             "card3 card4"
             "card5 .";
             grid-template-columns: 2fr 2fr;
+        }
+        @media (max-width:v.$media_mini){
+            gap: 10px;
         }
 
         &__hogwarts{
@@ -108,6 +110,9 @@
                 @media(max-width:v.$media_min){
                 max-width: 180px;
                 }
+                @media(max-width:v.$media_mini){
+                max-width: 170px;
+                }
             .description{
                 display: block;
                 padding: 0 0 96px 32px;
@@ -123,6 +128,9 @@
 
                 @media(max-width:v.$media_lg){
                 @include m.font(24px, 600, v.$color__white);
+                }
+                @media(max-width:v.$media_mini){
+                @include m.font(20px, 600, v.$color__white);
                 }
             }
             .metaverse{
@@ -192,6 +200,9 @@
                 @media(max-width:v.$media_min){
                 max-width: 180px;
                 }
+                @media(max-width:v.$media_mini){
+                max-width: 170px;
+                }
             .description{
                 display: block;
                 padding: 0 0 96px 32px;
@@ -207,6 +218,9 @@
 
                 @media(max-width:v.$media_lg){
                 @include m.font(20px, 600, v.$color__white);
+                }
+                @media(max-width:v.$media_mini){
+                @include m.font(18px, 600, v.$color__white);
                 }
             }
             .metaverse{
@@ -273,6 +287,9 @@
                 @media(max-width:v.$media_min){
                 max-width: 180px;
                 }
+                @media(max-width:v.$media_mini){
+                max-width: 170px;
+                }
             .description{
                 display: block;
                 padding: 0 0 96px 32px;
@@ -288,6 +305,9 @@
                 @include m.font(32px, 600,v.$color__white);
                 @media(max-width:v.$media_lg){
                 @include m.font(22px, 600, v.$color__white);
+                }
+                @media(max-width:v.$media_mini){
+                @include m.font(20px, 600, v.$color__white);
                 }
             }
             .metaverse{
@@ -357,6 +377,9 @@
                 @media (max-width:v.$media_min){
                 max-width: 180px;
                 }
+                @media(max-width:v.$media_mini){
+                max-width: 170px;
+                }
             .description{
                 display: block;
                 padding: 0 0 96px 32px;
@@ -374,6 +397,9 @@
                 }
                 @media(max-width:v.$media_min){                
                     left:6%;
+                }
+                @media(max-width:v.$media_mini){                  
+                @include m.font(22px, 600, v.$color__white);
                 }
             }
             .metaverse{
@@ -442,6 +468,10 @@
                 @media (max-width:v.$media_min){
                 max-width: 180px;
                 }
+                @media (max-width:v.$media_mini){
+                max-width: 170px;
+                }
+                
             .description{
                 display: block;
                 padding: 0 0 96px 32px;
@@ -456,6 +486,9 @@
                 transform-origin: unset ;
                 @media(max-width:v.$media_lg){
                 @include m.font(24px, 600, v.$color__white);
+                }
+                @media(max-width:v.$media_mini){
+                @include m.font(22px, 600, v.$color__white);
                 }
             }
             .metaverse{

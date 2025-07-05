@@ -64,6 +64,9 @@
                 @media (max-width: v.$media_min) {
                     @include m.d-flex(center, start, nowrap, row, 60px, 0);
                 }
+                @media (max-width: v.$media_mini) {
+                    @include m.d-flex(center, start, nowrap, row, 40px, 0);
+                }
             }
             @media (max-width: v.$media_sm) {
                 width: 100%;
@@ -123,10 +126,10 @@
                 left: 55%;
             }
             @media (max-width: v.$media_mini) {
-                top: 37%;
-                left: 60%;
-                width: 160px;
-                height: 280px;
+                top: 50%;
+                left: 62%;
+                width: 140px;
+                height: 140px;
             }
         }
 

@@ -116,9 +116,13 @@
                     top: 21.6%;
                     left: 10.6%;
                     }
-                    @media (max-width:v.$media_sm){
+                    @media (max-width:v.$media_min){
                     top: 27.6%;
                     left: 6%;
+                    }
+                    @media (max-width:v.$media_mini){
+                    top: 27.6%;
+                    left: 6.4%;
                     }
                 }
             }
@@ -224,6 +228,10 @@
                     @media (max-width:v.$media_min){
                     top: 45.8%;
                     left: 79%;
+                    }
+                    @media (max-width:v.$media_mini){
+                    top: 45.8%;
+                    left: 79.4%;
                     }
                 }
             }

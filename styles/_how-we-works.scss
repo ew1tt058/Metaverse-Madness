@@ -67,6 +67,9 @@
         height: 180px;
         background-size: 180px 180px;
             }
+        @media (max-width: v.$media_min) { 
+        top: 36%;
+            }
 
         &-background {
             top: 52%;
@@ -105,6 +108,13 @@
             right: -44%;
             height: 100px;
             width: 190px;
+            }
+            @media (max-width: v.$media_mini) { 
+            top: 52%;
+            right: -44%;
+            height: 100px;
+            width: 170px;
+            transform: rotate(6deg);
             }
         }
     }
@@ -146,6 +156,9 @@
             @media (max-width: v.$media_min) { 
                 @include m.d-flex(center, center, nowrap, row, 15px, 0);
             }
+            @media (max-width: v.$media_mini) { 
+                @include m.d-flex(center, center, nowrap, row, 10px, 0);
+            }
             &-number {
                 width: 70px;
                 height: 70px;
@@ -181,6 +194,10 @@
                 width: 160px;
                 @include m.font(13px, 400, v.$color__greywhite);
                 }
+                @media (max-width: v.$media_mini) {
+                width: 135px;
+                @include m.font(12px, 400, v.$color__greywhite);
+                }
             }
         }
 
@@ -192,6 +209,9 @@
             }
             @media (max-width: v.$media_xxl) { 
                 @include m.font(16px, 400, v.$color__greywhite);
+            }
+            @media (max-width: v.$media_mini) { 
+                @include m.d-flex(center, center, nowrap, row, 10px, 0);
             }
             &-number {
                 width: 70px;
@@ -230,6 +250,10 @@
                 width: 160px;
                 @include m.font(13px, 400, v.$color__greywhite);
                 }
+                @media (max-width: v.$media_mini) {
+                width: 140px;
+                @include m.font(12px, 400, v.$color__greywhite);
+                }
             }
         }
 
@@ -241,6 +265,9 @@
             }
             @media (max-width: v.$media_xxl) { 
                 @include m.font(16px, 400, v.$color__greywhite);
+            }
+            @media (max-width: v.$media_mini) { 
+                @include m.d-flex(center, center, nowrap, row, 10px, 0);
             }
             &-number {
                 width: 70px;
@@ -279,6 +306,10 @@
                 @media (max-width: v.$media_min) {
                 width: 160px;
                 @include m.font(13px, 400, v.$color__greywhite);
+                }
+                @media (max-width: v.$media_mini) {
+                    width: 130px;
+                    @include m.font(12px, 400, v.$color__greywhite);
                 }
             }
         }

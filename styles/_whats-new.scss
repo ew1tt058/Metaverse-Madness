@@ -50,6 +50,9 @@
             @media (max-width:v.$media_min){
                 width: 428px;
             }
+            @media (max-width:v.$media_mini){
+                width: 370px;
+            }
         }
         &__categories {
             padding: 48px 0 0 0;
@@ -109,18 +112,18 @@
         height: 700px;
         position: relative;
         &__planet {
-            width: 100%;
+            top: -6%;
             z-index: 3;
+            left: -9%;
             width: 900px;
             height: 700px;
             position: absolute;
             background: url("../assets/emptyplanet.webp") no-repeat center center;
-
             
             @media(max-width:v.$media_xl){
                 max-width: 600px;
                 top: -9%;
-
+                left: -2%;
             }
             @media (max-width:v.$media_lg){
                 max-width: 582px;
@@ -150,6 +153,10 @@
                 height: 200px;
                 background-size: 200px 200px;
             }
+            @media (max-width:v.$media_min){
+                top: 37%;
+                left: -16%;
+            }
 
             &-background {
                 top: 44%;
@@ -176,7 +183,7 @@
             }
                 @media(max-width:v.$media_lg){
                 top: 44%;
-                right: 6%;
+                right: 13%;
                 width: 500px;
                 transform: rotate(-5deg);
             }
@@ -192,9 +199,15 @@
                 width: 210px;
                 height: 110px;
             }
-            @media (max-width:v.$media_sm){
+            @media (max-width:v.$media_min){
                 top: 50%;
                 right: 5%;
+                width: 210px;
+                height: 110px;
+            }
+            @media (max-width:v.$media_mini){
+                top: 53%;
+                right: 18%;
                 width: 210px;
                 height: 110px;
             }

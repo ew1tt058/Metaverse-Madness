@@ -154,7 +154,7 @@
         width: 240px;
         height: 170px;
     }
-    @media (max-width: v.$media_md) {
+    @media (max-width: v.$media_sm) {
         top: 3%;
         width: 180px;
         height: 110px;
@@ -163,6 +163,9 @@
         top: 14%;
         width: 130px;
         height: 90px;
+    }
+    @media (max-width: v.$media_mini) {
+        top: 12%;
     }
     &__background {
         width: 260px;
@@ -180,7 +183,7 @@
             width: 220px;
             height: 150px;
         }
-        @media (max-width: v.$media_md) {
+        @media (max-width: v.$media_sm) {
             width: 170px;
             height: 100px;
         }
