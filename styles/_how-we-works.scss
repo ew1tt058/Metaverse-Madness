@@ -22,6 +22,10 @@
         @include m.d-flex(center, center, nowrap, row, 60px, 0);
         padding: 200px 78px 0 0;
             }
+    @media (max-width: v.$media_mini) { 
+        @include m.d-flex(center, center, nowrap, row, 60px, 0);
+        padding: 120px 78px 0 0;
+            }
     &-img {
         height: 100%;
         width: 100%;

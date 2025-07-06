@@ -122,6 +122,9 @@
                 @media(max-width:v.$media_min){                
                     padding: 0 0 96px 15px;
                 }
+                @media(max-width:v.$media_mini){
+                    @include m.font(14px,400,v.$color__white);
+                }
             }
             .title{              
                 top:86%;
@@ -212,6 +215,9 @@
                 @media(max-width:v.$media_min){                   
                     padding: 0 0 96px 15px;
                 }
+                @media(max-width:v.$media_mini){
+                    @include m.font(14px,400,v.$color__white);
+                }
             }
             .title{              
                 top:86%;
@@ -223,7 +229,7 @@
                 @include m.font(20px, 600, v.$color__white);
                 }
                 @media(max-width:v.$media_mini){
-                @include m.font(18px, 600, v.$color__white);
+                @include m.font(17px, 600, v.$color__white);
                 }
             }
             .metaverse{
@@ -299,6 +305,9 @@
                 @media(max-width:v.$media_min){                
                     padding: 0 0 96px 15px;
                 }
+                @media(max-width:v.$media_mini){
+                    @include m.font(14px,400,v.$color__white);
+                }
             }
             .title{              
                 top:86%;
@@ -309,8 +318,8 @@
                 @media(max-width:v.$media_lg){
                 @include m.font(22px, 600, v.$color__white);
                 }
-                @media(max-width:v.$media_mini){
-                @include m.font(20px, 600, v.$color__white);
+                @media(max-width:v.$media_mini){                
+                @include m.font(18px, 600, v.$color__white);
                 }
             }
             .metaverse{
@@ -389,6 +398,9 @@
                 @media (max-width:v.$media_min){
                 padding: 0 0 96px 15px;
                 }
+                @media(max-width:v.$media_mini){
+                    @include m.font(14px,400,v.$color__white);
+                }
             }
             .title{              
                 top:86%;
@@ -402,7 +414,7 @@
                     left:6%;
                 }
                 @media(max-width:v.$media_mini){                  
-                @include m.font(22px, 600, v.$color__white);
+                @include m.font(20px, 600, v.$color__white);
                 }
             }
             .metaverse{
@@ -480,6 +492,9 @@
                 padding: 0 0 96px 32px;
                 @media (max-width:v.$media_min){
                 padding: 0 0 96px 15px;
+                }
+                @media(max-width:v.$media_mini){
+                    @include m.font(14px,400,v.$color__white);
                 }
             }
             .title{              

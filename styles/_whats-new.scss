@@ -23,6 +23,10 @@
     @media (max-width:v.$media_min){
     width: 428px;
     }
+    @media (max-width:v.$media_mini){
+    width: 400px;
+    padding: 0px;
+    }
     &-info {
         padding: 0 0 0 135px;
         @media(max-width:v.$media_lg){

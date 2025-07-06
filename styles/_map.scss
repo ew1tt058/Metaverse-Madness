@@ -25,8 +25,12 @@
         @media (max-width: v.$media_min){
         width: 400px;
         }
+        @media (max-width: v.$media_mini){
+        width: 300px;
+        padding: 0px;
+        }
         &__text{
-            @include m.font(64px,700,v.$color__white);
+        @include m.font(64px,700,v.$color__white);
 
         @media (max-width: v.$media_lg){
         @include m.font(46px, 600, v.$color__white);
@@ -36,6 +40,9 @@
         }
         @media (max-width: v.$media_sm){
         @include m.font(30px, 700, v.$color__white);
+        }
+        @media (max-width: v.$media_mini){
+        @include m.font(20px, 700, v.$color__white);
         }
         }
 
